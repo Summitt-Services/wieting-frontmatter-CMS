@@ -14,7 +14,9 @@ Pushing this change should trigger my first build to https://main.d2hqwupnoud3ca
 
 # Not So Hot
 
-Well, the first build of the site referenced above was pretty bad, so I followed the advice provided at https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/ and set my build image to use Hugo:latest.  Let's see if that helps.  
+Well, the first build of the site referenced above was pretty bad, so I followed the advice provided at https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/ and set my build image to use Hugo:latest.  Let's see if that helps...    
+
+**Yes! Much improved!**
 
 
 
