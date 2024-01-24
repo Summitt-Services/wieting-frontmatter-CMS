@@ -44,6 +44,81 @@
           "type": "categories"
         }
       ]
+    },
+    {
+      "name": "events",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Consider appending the event date to the end of the title like this example... 'Private Event - 2022-03-09'.  Doing so helps differentiate events that otherwise would have identical Titles."
+        },
+        {
+          "title": "First Occurance Date",
+          "name": "first_date",
+          "type": "datetime",
+          "required": true,
+          "dateFormat": "yyyy-MM-dd",
+          "description": "Specify the FIRST date of this event. This will become part of the events's filename AND determine where it sorts/appears in our events list."
+        },
+        {
+          "title": "Event Duration (in Minutes)",
+          "name": "durationMinutes",
+          "type": "number",
+          "required": false,
+          "default": 60,
+          "description": "Enter the event duration in minutes."
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "occuranceList",
+          "name": "occuranceList",
+          "hidden": true,
+          "type": "fields",
+
+          "fields": [
+            {
+              "title": "Occurances",
+              "name": "occurance",
+              "type": "block",
+              "fields": [
+                {
+                  "title": "0",
+                  "name": "0",
+                  "type": "fields",
+                  "fields": [
+                    {
+                      "title": "Occurance Date and Time",
+                      "name": "date",
+                      "type": "datetime",
+                      "required": true
+                    },
+                    {
+                      "title": "Note",
+                      "name": "note",
+                      "type": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "frontMatter.framework.id": "hugo",
