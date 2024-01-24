@@ -6,7 +6,7 @@ dateFormat: Jan 2, 2006
 homeText: The Wieting's schedule is subject to change without notice. Please check often for updates!
 footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
 hideFooter: false
-katex: true
+katex: false
 customCss: "css/custom.css"
 dropboxURL: ""
 
