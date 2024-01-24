@@ -1,0 +1,30 @@
+includeBootstrapJs: true
+showActiveNav: true
+containerMaxWidth: 1800px
+dateFormat: Jan 2, 2006
+# homeText: We are closed tonight (January 12) due to travel not advised. Please stay safe and check back tomorrow for further updates.
+homeText: The Wieting's schedule is subject to change without notice. Please check often for updates!
+footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
+hideFooter: false
+katex: true
+customCss: "css/custom.css"
+dropboxURL: ""
+
+social:
+  share:
+    donate:
+      switch: true
+      url: "/donate"
+    facebook:
+      switch: true
+      url: "https://www.facebook.com/WietingTheatre/"
+    linkedin:
+      switch: false
+    # twitter:
+    #   switch: true
+    #   url: "https://twitter.com/WietingTheatre"
+    whatsapp:
+      switch: false
+    email:
+      switch: true
+      url: "mailto:ToledoWieting@gmail.com"

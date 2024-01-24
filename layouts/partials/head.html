@@ -1,0 +1,35 @@
+{{ `<!-- hugo: layouts/partials/head.html -->` | safeHTML }}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {{ hugo.Generator }}
+  <link rel='stylesheet' href='{{ .Site.BaseURL }}css/bootstrap.min.css' />
+  <link rel='stylesheet' href='{{ .Site.BaseURL }}css/custom.css' />
+  <link rel='stylesheet' href='{{ .Site.BaseURL }}css/fullcalendar.min.css' />
+
+  {{ $title := print .Title " | " .Site.Title }}
+  {{ if .IsHome }}
+    {{ $title = .Site.Title }}
+  {{ end }}
+  <title>{{ $title }}</title>
+  {{ partial "style.html" . }}
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.summittservices.com/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '2']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+</head>
+
+{{ `<!-- /hugo: layouts/partials/head.html -->` | safeHTML }}

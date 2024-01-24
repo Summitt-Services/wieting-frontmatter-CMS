@@ -1,0 +1,621 @@
+backend:
+  name: github
+  repo: Summitt-Services/wieting-staticCMS
+  branch: main
+  
+local_backend: 
+  # when using a custom proxy server port
+  url: http://localhost:8082/api/v1
+  # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
+  allowed_hosts: ['192.168.0.1']
+
+media_folder: site/static/one-sheet-images 
+public_folder: /img
+
+collections:
+  
+## Shows
+  
+  - name: show
+    label: Shows
+    folder: /site/content/show/active    
+    create: true
+    slug: '{{fields.date}}_{{title}}'
+    editor:
+      preview: true
+    
+    sort: "date:desc"
+    # sortable_fields: [ 'date' ]    ## Not supported in StaticCMC???
+    
+    # view_groups:                   ## Not supported in StaticCMS???
+    #   - label: 'Year-Month'
+    #     field: date
+    #     pattern: \d{4}-\d{2}
+  
+    fields:
+
+      - label: Title
+        name: title
+        widget: string
+        required: true
+        
+      - label: Opening Date
+        name: date
+        widget: datetime
+        required: true
+        picker_utc: false 
+        format: 'yyyy-MM-dd'
+        hint: Specify the date the show OPENS. This will become part of the show's filename AND determine where it sorts on the front page display.
+
+      # - label: Dates String
+      #   name: dates
+      #   widget: string 
+      #   required: false
+      #   hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/management/dates' for guidance.  This field is no longer required!  If you omit it, be sure to populate discrete 'occurances' details in the fields provided below. 
+
+      # - label: Expand Dates String? 
+      #   name: expand
+      #   widget: boolean
+      #   default: true
+      #   hint: Select TRUE to always expand the Dates String entered above.  Select FALSE if you wish to enter discrete occurance details below.
+
+      - label: Synopsis
+        name: body
+        widget: markdown 
+        required: false
+
+      - label: Production Notes
+        name: description
+        widget: string
+        hint: "Populates the 'description' field."
+        required: false
+
+      # - label: Publish Date
+      #   name: publishDate
+      #   widget: date
+      #   reqiured: true
+      #   hint: "Pick the earliest date that this show should appear on the website."
+      #   format: "yyyy-MM-dd"
+
+      # - label: Expiration Date
+      #   name: expiryDate
+      #   widget: date
+      #   reqiured: true
+      #   hint: "Pick the day AFTER this show's final occurance!"
+      #   format: "yyyy-MM-dd"
+
+      - label: Display Date Range
+        name: dateRange
+        widget: string
+        required: true
+        hint: "Enter a SHORT date range to display in the marquee. Example: 'Jan 30 - Feb 2'."
+
+      - label: Short Title
+        name: shortTitle
+        required: true
+        widget: string
+        pattern: ['^.{1,30}$', "30 characters max."]
+
+      - label: One Sheet
+        name: oneSheet
+        widget: image
+        ui: true
+        default: _default_no-image-available.png
+        media_library:
+          config:
+            multiple: false
+
+      - label: Show Type
+        name: showType
+        widget: select
+        options: [ "Closed", "Cinema", "Animated Cinema", "Live occurance", "Meeting", "Social Event", "Private" ]
+        required: false
+
+      - label: Running Time 
+        name: runningTime
+        widget: number
+        hint: "Enter running time in minutes. Must be an integer."
+        default: 120
+
+      - label: "MPAA Rating"   
+        name: mpaaRating
+        widget: select
+        options: [ "G", "PG", "PG-13", "NC-17", "R", "Not Rated" ]
+        default: "Not Rated"
+
+      - label: Official URL
+        name: officialURL
+        widget: string
+        required: false
+
+      - label: IMDB URL 
+        name: imdbURL 
+        widget: string
+        required: false
+      
+      - label: Occurances
+        name: occuranceList
+        widget: object
+        required: true
+        
+        fields:
+      
+          - label: Occurance 
+            name: occurance 
+            widget: list
+
+            fields:
+              - { label: When, name: date, widget: datetime, picker_utc: false, date_format: true, required: true }
+              - { label: Format, name: format, widget: select, options: [ "2D", "3D", "Not Applicable" ], required: true, default: "2D" }
+              - { label: Peformance Note, name: note, required: false, default: "" }
+
+      - label: "Studio Info"
+        name: studioInfo 
+        widget: object
+        collapsed: true
+        summary: "{{fields.studio}} - ${{fields.studioFee}} - {{fields.studioPercentage}}%"
+
+        fields:
+      
+          - label: Studio 
+            name: studio 
+            widget: string
+            default: "Not Specified"
+            required: false
+
+          - label: Studio Fee
+            name: studioFee
+            widget: number
+            default: 0
+            hint: "Enter fee in US dollars." 
+            required: false
+
+          - label: Studio Percentage
+            name : studioPercentage
+            widget: number
+            default: 0 
+            required: false
+                    
+      # - label: Pre-Show Audio
+      #   name: audio_selection
+      #   widget: select
+      #   options: [ "action-cool", "action-rock", "adventure-upbeat", "challenge-story", "drama-calm", "drama-hopeful", "drama-innovative", "drama-pop", "family-simple", "family-upbeat", "hero-cool", "insipirational-innovative", "kid-happy", "lobby-calm", "lobby-simple", "party-pop", "pop-simple", "somber-calm", "somber-tragedy", "spy-groovy", "story-happy", "story-simple", "upbeat-friendly" ]
+      #   required: false
+      #   hint: Select a single audio clip to accompany this show in our pre-show sequence.
+
+      # - label: Copy Show to Pre-Show List?
+      #   name: pre_show
+      #   widget: boolean
+      #   default: true
+      #   hint: Set FALSE if you do NOT want this show presented during the Wieting's 30-minute pre-show sequence.
+
+      - label: Draft? 
+        name: draft
+        widget: boolean
+        default: false
+
+## occurances
+
+  # - name: occurance
+  #   label: occurances
+  #   folder: site/content/occurance    # site/content/occurance
+  #   create: true
+  #   slug: '{{year}}-{{month}}-{{day}}-{{hour}}'
+  #   editor:
+  #     preview: true
+    
+    # sort: "date:desc"
+    # # sortable_fields: [ 'date', 'showFormat' ]    ## Not supported in StaticCMS???
+    
+    # # view_groups:                       ## Not supported in StaticCMS???
+    # #   - label: 'Manager'
+    # #     field: volunteers.manager
+    # #   - label: 'Year-Month'
+    # #     field: date
+    # #     pattern: \d{4}-\d{2}
+    # #   - label: 'Format'
+    # #     field: showFormat
+
+    # fields:
+
+    #   - label: Date and Time
+    #     name: date
+    #     widget: datetime
+    #     picker_utc: false 
+
+    #   - label: Title
+    #     name: title
+    #     widget: string
+    #     required: true
+
+    #   - label: Body
+    #     name: body
+    #     widget: markdown 
+    #     required: false
+
+    #   - label: Format
+    #     name: showFormat
+    #     widget: select
+    #     options: [ "2D", "3D", "Not Applicable" ]
+    #     required: false 
+
+    #   - label: "Volunteer Team"
+    #     name: volunteers
+    #     widget: object
+
+    #     fields:
+          
+    #       - label: Manager
+    #         name: manager
+    #         widget: string
+    #         required: true
+    #         default: TBD
+        
+    #       - label: Monitor
+    #         name: monitor
+    #         widget: string
+    #         required: true
+    #         default: TBD
+        
+    #       - label: M-Partner
+    #         name: m-partner
+    #         widget: string
+    #         required: true
+    #         default: TBD
+        
+    #       - label: Concessions
+    #         name: concessions
+    #         widget: string
+    #         required: true
+    #         default: TBD
+        
+    #       - label: C-Partner
+    #         name: c-partner
+    #         widget: string
+    #         required: true
+    #         default: TBD
+        
+    #       - label: Tickets
+    #         name: tickets
+    #         widget: string
+    #         required: true
+    #         default: TBD
+        
+    #   - label: Draft 
+    #     name: draft
+    #     widget: boolean
+    #     default: false
+        
+## Events
+
+  - name: event
+    label: Events
+    folder: /site/content/event/active    
+    create: true
+    slug: '{{fields.date}}_{{title}}'
+    editor:
+      preview: true
+    
+    sort: "date:desc"
+    # sortable_fields: [ 'date' ]           ## Not supported in StaticCMS???
+    
+    # view_groups:                          ## Not supported in StaticCMS???
+    #   - label: 'Year-Month'
+    #     field: date
+    #     pattern: \d{4}-\d{2}
+
+    fields:
+
+      - label: Title
+        name: title
+        widget: string
+        required: true
+        hint: Consider appending the event date to the end of the title like this example... 'Private Event - 2022-03-09'.  Doing so helps differentiate events that otherwise would have identical Titles.
+        
+      - label: First Date
+        name: date
+        widget: datetime
+        picker_utc: false 
+        required: true
+        format: 'yyyy-MM-dd'
+        hint: Specify the FIRST date of this event. This will become part of the events's filename AND determine where it sorts/appears in our events list.
+
+      - label: Event Duration (Minutes)  
+        name: durationMinutes
+        default: 60
+        widget: number
+        hint: "Enter the event duration in minutes."
+
+      - label: Occurances
+        name: occuranceList
+        widget: object
+        required: true
+        
+        fields:
+      
+          - label: Occurance 
+            name: occurance 
+            widget: list
+
+            fields:
+              - { label: When, name: date, widget: datetime, picker_utc: false, date_format: true, required: true }
+              - { label: Note, name: note, required: false, default: "" }
+
+      - label: Body
+        name: body
+        widget: markdown 
+        required: false
+
+      - label: Draft 
+        name: draft
+        widget: boolean
+        default: false
+        required: false
+
+## Main Pages
+
+  - name: pages
+    label: Main Pages
+    folder: site/content    
+    create: true
+    hint: For editing pages that appear in the site's top-level menu.
+
+    fields:
+      
+      - label: Title
+        name: title
+        widget: string
+        
+      - label: Body
+        name: body
+        widget: markdown
+        
+      - label: Draft?
+        name: draft 
+        widget: boolean
+        default: false
+        
+      - label: Author
+        name: author
+        widget: string
+        
+      - label: Date
+        name: date
+        widget: datetime 
+        
+      - label: SocialShare?
+        name: socialshare
+        widget: hidden
+        default: false            
+        
+      - label: Weight
+        name: weight
+        widget: number            
+        
+      - label: Menu Structure
+        name: menu
+        widget: object
+        fields:
+          - label: Main Menu
+            name: main
+            widget: object
+            fields:
+              - label: Identifier
+                name: identifier
+              - label: Parent Menu Identifier
+                name: parent
+                default: " "
+                required: false
+                widget: hidden
+                hint: Leave this blank for TOP LEVEL menu pages.
+              - label: Weight
+                name: weight
+                widget: number
+                
+## About Pages
+
+  - name: about-pages
+    label: About Pages
+    folder: site/content/about  
+    create: true
+    hint: For editing pages that appear under the 'About' page in the menu.
+
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Draft?
+        name: draft 
+        widget: boolean
+        default: false
+      - label: Author
+        name: author
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime 
+      - label: Menu Structure
+        name: menu
+        widget: object
+        fields:
+          - label: Main Menu
+            name: main
+            widget: object
+            fields:
+              - label: Identifier
+                name: identifier
+              - label: Parent Menu Identifier
+                name: parent
+                required: true
+                widget: hidden
+                default: about
+                hint: Should be 'about' at this level.
+              - label: Weight
+                name: weight
+                widget: number
+
+## History Pages
+
+  - name: history-pages
+    label: History Pages
+    folder: site/content/history
+    create: true
+    hint: For editing pages that appear under the 'History' page in the menu.
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Draft?
+        name: draft 
+        widget: boolean
+        default: false
+      - label: Author
+        name: author
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime 
+      - label: Menu Structure
+        name: menu
+        widget: object
+        fields:
+          - label: Main Menu
+            name: main
+            widget: object
+            fields:
+              - label: Identifier
+                name: identifier
+              - label: Parent Menu Identifier
+                name: parent
+                required: true
+                widget: hidden
+                default: history
+                hint: Should be 'history' at this level.
+              - label: Weight
+                name: weight
+                widget: number
+
+
+    # files:
+    # 
+    #   - file: "site/content/contact/_index.md"
+    #     label: "Contact Page"
+    #     name: "contact"
+    #     fields:
+    #       - {label: Title, name: title, widget: string}
+    #       - {label: Logo, name: logo, widget: image}
+    #       - {label: Body, name: body, widget: markdown}
+    #       - label: Contact Entries
+    #         name: contact_entries
+    #         widget: list
+    #         fields:
+    #           - label: Heading
+    #             name: heading
+    #             widget: string
+    #           - label: Text
+    #             name: text
+    #             widget: text
+    # 
+    #   - file: "site/content/history/_index.md"
+    #     label: "History"
+    #     name: "history"
+    #     fields:
+    #       - {label: Title, name: title, widget: string}
+    #       - {label: Logo, name: logo, widget: image}
+    #       - {label: Body, name: body, widget: markdown}
+    #       - label: Contact Entries
+    #         name: contact_entries
+    #         widget: list
+    #         fields:
+    #           - label: Heading
+    #             name: heading
+    #             widget: string
+    #           - label: Text
+    #             name: text
+    #             widget: text
+
+
+## collections: below are from the original StaticCMS Hugo demo
+#
+# collections: # A list of collections the CMS should be able to edit
+#   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+#     label: "Post" # Used in the UI, ie.: "New Post"
+#     folder: "site/content/post" # The path to the folder where the documents are stored
+#     create: true # Allow users to create new documents in this collection
+#     fields: # The fields each document in this collection have
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Publish Date", name: "date", widget: "datetime"}
+#       - {label: "Intro Blurb", name: "description", widget: "text"}
+#       - {label: "Image", name: "image", widget: "image", required: false}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "pages"
+#     label: "Pages"
+#     files:
+#       - file: "site/content/_index.md"
+#         label: "Home Page"
+#         name: "home"
+#         fields:
+#           - {label: Title, name: title, widget: string}
+#           - {label: Subtitle, name: subtitle, widget: string}
+#           - {label: Image, name: image, widget: image}
+#           - {label: "Blurb", name: blurb, widget: object, fields: [
+#               {label: "Heading", name: "heading", widget: string},
+#               {label: "Text", name: "text", widget: "text"}]}
+#           - {label: "Intro", name: intro, widget: object, fields: [
+#               {label: "Heading", name: "heading", widget: string},
+#               {label: "Text", name: "text", widget: "text"}]}
+#           - {label: "Products", name: products, widget: list, fields: [
+#               {label: "Image", name: "image", widget: "image"},
+#               {label: "Text", name: "text", widget: "text"}]}
+#           - {label: "Values", name: "values", widget: "object", fields: [
+#               {label: "Heading", name: "heading", widget: string},
+#               {label: "Text", name: "text", widget: "text"}]}
+#       - file: "site/content/contact/_index.md"
+#         label: "Contact Page"
+#         name: "contact"
+#         fields:
+#           - {label: Title, name: title, widget: string}
+#           - {label: Logo, name: logo, widget: image}
+#           - {label: Body, name: body, widget: markdown}
+#           - label: Contact Entries
+#             name: contact_entries
+#             widget: list
+#             fields:
+#               - label: Heading
+#                 name: heading
+#                 widget: string
+#               - label: Text
+#                 name: text
+#                 widget: text
+#       - file: "site/content/products/_index.md"
+#         label: "Products Page"
+#         name: "products"
+#         fields:
+#           - {label: Title, name: title, widget: string}
+#           - {label: Image, name: image, widget: image}
+#           - {label: Heading, name: heading, widget: string}
+#           - {label: Description, name: description, widget: string}
+#           - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+#           - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+#           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
+#           - {label: Full_image, name: full_image, widget: image}
+#           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+#       - file: "site/content/values/_index.md"
+#         label: "Values Page"
+#         name: "values"
+#         fields:
+#           - {label: Title, name: title, widget: string}
+#           - {label: Image, name: image, widget: image}
+#           - label: Values
+#             name: values
+#             widget: list
+#             fields:
+#               - {label: Heading, name: heading, widget: string}
+#               - {label: Text, name: text, widget: text}
+#               - {label: Image, name: imageUrl, widget: image}
