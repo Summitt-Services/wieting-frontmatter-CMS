@@ -46,7 +46,7 @@
       ]
     },
     {
-      "name": "Events",
+      "name": "events",
       "pageBundle": false,
       "previewPath": null,
       "fields": [
@@ -126,12 +126,24 @@
   "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.content.pageFolders": [
     {
+      "path": "[[workspace]]/content/history",
+      "title": "history"
+    },
+    {
+      "title": "active-pre-shows",
+      "path": "[[workspace]]/content/pre-show/active"
+    },
+    {
       "title": "active-shows",
       "path": "[[workspace]]/content/show/active"
     },
     {
       "title": "active-events",
       "path": "[[workspace]]/content/event/active"
+    },
+    {
+      "title": "about",
+      "path": "[[workspace]]/content/about"
     }
   ]
 }
