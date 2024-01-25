@@ -1,3 +1,6 @@
+---
+draft: false
+---
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.taxonomy.contentTypes": [
@@ -46,7 +49,7 @@
       ]
     },
     {
-      "name": "Events",
+      "name": "event",
       "pageBundle": false,
       "previewPath": null,
       "fields": [
@@ -59,7 +62,7 @@
         },
         {
           "title": "First Occurance Date",
-          "name": "first_date",
+          "name": "date",
           "type": "datetime",
           "required": true,
           "dateFormat": "yyyy-MM-dd",
@@ -74,19 +77,15 @@
           "description": "Enter the event duration in minutes."
         },
         {
-          "title": "date",
-          "name": "date",
-          "type": "datetime"
-        },
-        {
-          "title": "draft",
+          "title": "Draft",
           "name": "draft",
-          "type": "draft"
+          "type": "draft",
+          "description": "Set to 'true' if you want to hide this Event"
         },
         {
           "title": "occuranceList",
           "name": "occuranceList",
-          "hidden": true,
+          "hidden": false,
           "type": "fields",
 
           "fields": [
@@ -104,6 +103,7 @@
                       "title": "Occurance Date and Time",
                       "name": "date",
                       "type": "datetime",
+                      "dateFormat": "yyyy-MM-dd",
                       "required": true
                     },
                     {

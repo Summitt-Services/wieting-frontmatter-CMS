@@ -7,4 +7,5 @@ occuranceList:
   occurance:
     - date: 2024-05-25 08:00:00
       note: ""
+type: event
 ---
