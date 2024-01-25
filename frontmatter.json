@@ -1,6 +1,3 @@
----
-draft: false
----
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.taxonomy.contentTypes": [
