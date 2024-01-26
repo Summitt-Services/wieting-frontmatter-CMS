@@ -7,11 +7,11 @@
 
       <!-- right block -->
       <div class="show-right-block">
-        {{ if .context.Params.occurances }}
+        {{ if .context.Params.occurrences }}
         <!--  <hr/> -->
         {{ end }}
         <div class="remaining_details">
-          <div class="field field--name-field-occurance-times field--type-datetime">
+          <div class="field field--name-field-occurrence-times field--type-datetime">
             <ul class="show-times">
               {{ if in .context.Params.dateRange "Soon" }}
                 <li class="field--item">
@@ -24,7 +24,7 @@
                   Check back regularly for updates!  
                 </li>
               {{ else }}     
-                {{ range .context.Params.occurances }}
+                {{ range .context.Params.occurrences }}
                   <li class="field--item">
                     {{ $dtime := time .date }}
                     <span class="big-bold">{{ dateFormat "Monday - January 2 @ 3:04 PM" $dtime.Local }}</span>

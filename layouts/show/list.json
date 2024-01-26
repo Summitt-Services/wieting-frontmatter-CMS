@@ -2,7 +2,7 @@
   {{ range $j, $_ := .Pages }}
     {{ $title := .Title }}
     {{ $url := .Permalink | absURL }}
-    {{ range $k, $_ := .Params.occurances }}  
+    {{ range $k, $_ := .Params.occurrences }}  
       {{ if or $j $k }},{{ end }} 
       {
         "title": "{{ $title }}",

@@ -8,7 +8,7 @@ showType: Cinema
 runningTime: 112
 mpaaRating: PG-13
 imdbURL: https://www.imdb.com/title/tt11762114/
-occurances:
+occurrences:
   - format: 2D
     note: ""
     date: 2024-01-19T19:00:00-06:00

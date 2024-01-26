@@ -9,8 +9,8 @@ imdbURL: null
 mpaaRating: Not Rated
 officialURL: null
 oneSheet: /img/_keep_closed-until-further-notice.jpg
-occuranceList:
-  occurance: []
+occurrenceList:
+  occurrence: []
 publishDate: 2023/12/15
 runningTime: 0
 shortTitle: Closed for the Holidays

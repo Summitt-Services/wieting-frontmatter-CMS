@@ -15,7 +15,7 @@ imdbURL:
 studio: 
 studioFee: 
 studioPercentage: 
-occurances:
+occurrences:
   - first
   - second
   - last

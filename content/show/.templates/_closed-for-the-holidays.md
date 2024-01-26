@@ -5,8 +5,8 @@ draft: false
 expiryDate: 2024-01-05 00:00:00
 mpaaRating: Not Rated
 oneSheet: /img/_no-movie.png
-occuranceList:
-  occurance:
+occurrenceList:
+  occurrence:
   - date: 2023-12-22 19:00:00
     format: Not Applicable
     note: ''

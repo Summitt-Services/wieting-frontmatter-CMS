@@ -3118,7 +3118,7 @@ function getPDFFileNameFromURL(url, defaultFilename = "document.pdf") {
   }
 
   if (isDataSchema(url)) {
-    console.warn("getPDFFileNameFromURL: " + 'ignoring "data:" URL for occurance reasons.');
+    console.warn("getPDFFileNameFromURL: " + 'ignoring "data:" URL for occurrence reasons.');
     return defaultFilename;
   }
 
@@ -6522,7 +6522,7 @@ class PDFHistory {
           return false;
         }
 
-        const [perfEntry] = occurance.getEntriesByType("navigation");
+        const [perfEntry] = occurrence.getEntriesByType("navigation");
 
         if (!perfEntry || perfEntry.type !== "reload") {
           return false;
@@ -10118,7 +10118,7 @@ class PDFPageView {
         source: this,
         pageNumber: this.id,
         cssTransform: true,
-        timestamp: occurance.now()
+        timestamp: occurrence.now()
       });
       return;
     }
@@ -10140,7 +10140,7 @@ class PDFPageView {
           source: this,
           pageNumber: this.id,
           cssTransform: true,
-          timestamp: occurance.now()
+          timestamp: occurrence.now()
         });
         return;
       }
@@ -10351,7 +10351,7 @@ class PDFPageView {
         source: this,
         pageNumber: this.id,
         cssTransform: false,
-        timestamp: occurance.now()
+        timestamp: occurrence.now()
       });
 
       if (error) {

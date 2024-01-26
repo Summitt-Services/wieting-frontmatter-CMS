@@ -9,8 +9,8 @@ imdbURL: null
 mpaaRating: Not Rated
 officialURL: null
 oneSheet: /img/_no-movie.png
-occuranceList:
-  occurance:
+occurrenceList:
+  occurrence:
   - date: 2023-12-19 19:00:10-06:00
     format: 2D
     note: ''

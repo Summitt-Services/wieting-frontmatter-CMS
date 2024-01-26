@@ -6,8 +6,8 @@ runningTime: 0
 mpaaRating: Not Rated
 officialURL: wieting.Tama-Toledo.com
 imdbURL: ""
-occuranceList:
-  occurance: []
+occurrenceList:
+  occurrence: []
 studioInfo:
   studio: x
   studioFee: 0

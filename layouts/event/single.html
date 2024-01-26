@@ -77,7 +77,7 @@
       <p>Duration: <b>{{ .Params.durationMinutes }}</b> minutes</p>
     {{ end }}
     <div class="indent-items">
-      {{ range .Params.occuranceList.occurance }}
+      {{ range .Params.occurrenceList.occurrence }}
         <li class="field--item">
           {{ $dtime := time .date }}
           {{ dateFormat "Monday - January 2 @ 3:04 PM" $dtime.Local }}
@@ -106,7 +106,7 @@
     {{ end }}  
 
         <div class="remaining_details">
-          <div class="field field--name-field-occurance-times field--type-datetime">
+          <div class="field field--name-field-occurrence-times field--type-datetime">
             <div class="synopsis">{{ .Content }}</div>
             <hr/>
             {{ if .Params.mpaaRating }}

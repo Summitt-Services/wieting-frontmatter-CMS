@@ -58,7 +58,7 @@
           "description": "Consider appending the event date to the end of the title like this example... 'Private Event - 2022-03-09'.  Doing so helps differentiate events that otherwise would have identical Titles."
         },
         {
-          "title": "First Occurance Date",
+          "title": "First occurrence Date",
           "name": "first_date",
           "type": "datetime",
           "required": true,
@@ -84,15 +84,15 @@
           "type": "draft"
         },
         {
-          "title": "occuranceList",
-          "name": "occuranceList",
+          "title": "occurrenceList",
+          "name": "occurrenceList",
           "hidden": true,
           "type": "fields",
 
           "fields": [
             {
-              "title": "Occurances",
-              "name": "occurance",
+              "title": "occurrences",
+              "name": "occurrence",
               "type": "block",
               "fields": [
                 {
@@ -101,7 +101,7 @@
                   "type": "fields",
                   "fields": [
                     {
-                      "title": "Occurance Date and Time",
+                      "title": "occurrence Date and Time",
                       "name": "date",
                       "type": "datetime",
                       "required": true

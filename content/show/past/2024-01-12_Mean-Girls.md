@@ -8,7 +8,7 @@ showType: Cinema
 runningTime: 112
 mpaaRating: PG-13
 imdbURL: https://www.imdb.com/title/tt11762114/
-occurance:
+occurrence:
   - format: 2D
     note: "We are closing tonight due to travel not advised. Please stay safe and check back tomorrow for further updates."
     date: 2024-01-12T19:00:00-06:00

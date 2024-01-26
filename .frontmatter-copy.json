@@ -3,8 +3,8 @@
 
   "frontMatter.taxonomy.fieldGroups": [
     {
-      "id": "occurances",
-      "labelField": "Occurance",
+      "id": "occurrences",
+      "labelField": "occurrence",
       "fields": [
         {
           "title": "Date and Time",
@@ -35,7 +35,7 @@
           "description": "Consider appending the event date to the end of the title like this example... 'Private Event - 2022-03-09'.  Doing so helps differentiate events that otherwise would have identical Titles."
         },
         {
-          "title": "First Occurance Date",
+          "title": "First occurrence Date",
           "name": "date",
           "type": "datetime",
           "required": true,
@@ -57,11 +57,11 @@
           "description": "Set to 'true' if you want to NOT publish this Event"
         },
         {
-          "title": "Occurances",
-          "name": "occurances",
+          "title": "occurrences",
+          "name": "occurrences",
           "type": "block",
           "fieldGroup": [
-            "occurances"
+            "occurrences"
           ]
         }
       ]

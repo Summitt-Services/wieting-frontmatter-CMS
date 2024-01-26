@@ -8,7 +8,7 @@ showType: Animated Cinema
 runningTime: 83
 mpaaRating: PG
 imdbURL: https://www.imdb.com/title/tt6495056/
-occurances:
+occurrences:
   - format: 2D
     note: ""
     date: 2024-01-26T19:00:00-06:00

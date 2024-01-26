@@ -53,13 +53,13 @@ collections:
         name: dates
         widget: string 
         required: false
-        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/management/dates' for guidance.  This field is no longer required!  If you omit it, be sure to populate discrete 'occurances' details in the fields provided below. 
+        hint: Enter the discrete or recurring date/time(s) as a string.  See 'https://wieting.TamaToledo.com/management/dates' for guidance.  This field is no longer required!  If you omit it, be sure to populate discrete 'occurrences' details in the fields provided below. 
 
       # - label: Expand Dates String? 
       #   name: expand
       #   widget: boolean
       #   default: true
-      #   hint: Select TRUE to always expand the Dates String entered above.  Select FALSE if you wish to enter discrete occurance details below.
+      #   hint: Select TRUE to always expand the Dates String entered above.  Select FALSE if you wish to enter discrete occurrence details below.
 
       - label: Synopsis
         name: body
@@ -83,7 +83,7 @@ collections:
       #   name: expiryDate
       #   widget: date
       #   reqiured: true
-      #   hint: "Pick the day AFTER this show's final occurance!"
+      #   hint: "Pick the day AFTER this show's final occurrence!"
       #   format: "YYYY-MM-DD"
 
       - label: Display Date Range
@@ -110,7 +110,7 @@ collections:
       - label: Show Type
         name: showType
         widget: select
-        options: [ "Closed", "Cinema", "Animated Cinema", "Live occurance", "Meeting", "Social Event", "Private" ]
+        options: [ "Closed", "Cinema", "Animated Cinema", "Live occurrence", "Meeting", "Social Event", "Private" ]
         required: false
 
       - label: Running Time 
@@ -135,15 +135,15 @@ collections:
         widget: string
         required: false
       
-      - label: occurances
-        name: occuranceList
+      - label: occurrences
+        name: occurrenceList
         widget: object
         required: false
         
         fields:
       
-          - label: occurance 
-            name: occurance 
+          - label: occurrence 
+            name: occurrence 
             widget: list
 
             fields:
@@ -196,11 +196,11 @@ collections:
         widget: boolean
         default: false
 
-## occurances
+## occurrences
 
-  - name: occurance
-    label: occurances
-    folder: site/content/occurance    # site/content/occurance
+  - name: occurrence
+    label: occurrences
+    folder: site/content/occurrence    # site/content/occurrence
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{hour}}'
     editor:

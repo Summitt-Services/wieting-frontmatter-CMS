@@ -78,7 +78,7 @@
     </div>  
     <div class="show-right-block">
       <div class="remaining_details">
-        <div class="field field--name-field-occurance-times field--type-datetime">
+        <div class="field field--name-field-occurrence-times field--type-datetime">
           <ul class="show-times">
             {{ if in .Params.dateRange "Soon" }}
               <li class="field--item">
@@ -91,7 +91,7 @@
                 Check back regularly for updates!  
               </li>
             {{ else }}     
-              {{ range .Params.occurances }}
+              {{ range .Params.occurrences }}
                 <li class="field--item">
                   {{ $dtime := time .date }}
                   {{ dateFormat "Monday - January 2 @ 3:04 PM" $dtime.Local }}

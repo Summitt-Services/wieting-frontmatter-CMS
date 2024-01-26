@@ -6,8 +6,8 @@ runningTime: 120
 mpaaRating: Not Rated
 officialURL: null
 imdbURL: null
-occuranceList:
-  occurance: []
+occurrenceList:
+  occurrence: []
 studioInfo:
   ? studio
   ? studioFee
