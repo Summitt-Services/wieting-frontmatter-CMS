@@ -1,6 +1,6 @@
 ---
 title: Mean Girls
-date: 2024-01-19T19:00:00
+date: 2024-01-19
 dateRange: Jan 19 - 21
 shortTitle: Mean Girls
 oneSheet: /one-sheet-images/mean-girls.png
@@ -8,17 +8,16 @@ showType: Cinema
 runningTime: 112
 mpaaRating: PG-13
 imdbURL: https://www.imdb.com/title/tt11762114/
-occuranceList:
-  occurance:
-    - format: 2D
-      note: ""
-      date: 2024-01-19T19:00:00
-    - format: 2D
-      note: ""
-      date: 2024-01-20T19:00:00
-    - format: 2D
-      note: ""
-      date: 2024-01-21T19:00:00
+occurances:
+  - format: 2D
+    note: ""
+    date: 2024-01-19T19:00:00-06:00
+  - format: 2D
+    note: ""
+    date: 2024-01-20T19:00:00-06:00
+  - format: 2D
+    note: ""
+    date: 2024-01-21T19:00:00-06:00
 studioInfo:
   studio: Not Specified
   studioFee: 0

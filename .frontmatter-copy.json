@@ -1,12 +1,10 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
 
-  "frontMatter.taxonomy.dateFormat": "PPppp",
-
   "frontMatter.taxonomy.fieldGroups": [
     {
       "id": "occurances",
-      "labelField": "Occurances",
+      "labelField": "Occurance",
       "fields": [
         {
           "title": "Date and Time",
@@ -62,7 +60,8 @@
           "title": "Occurances",
           "name": "occurances",
           "type": "block",
-          "fieldGroup": "occurances"
+          "fieldGroup": [
+            "occurances"
           ]
         }
       ]
