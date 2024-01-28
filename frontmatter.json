@@ -3,7 +3,7 @@
 
   "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH:mm:ssx",
 
-  "frontMatter.taxonomy.prefix": null,
+  "frontMatter.taxonomy.slugPrefix": "",
 
   "frontMatter.taxonomy.fieldGroups": [
     {
