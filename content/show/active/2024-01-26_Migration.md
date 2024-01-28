@@ -11,13 +11,13 @@ imdbURL: https://www.imdb.com/title/tt6495056/
 occurrences:
   - format: 2D
     note: ""
-    date: 2024-01-26T19:00:00-06:00
+    date: 2024-01-27T01:00:00.000Z
   - format: 2D
     note: ""
-    date: 2024-01-27T19:00:00-06:00
+    date: 2024-01-28T01:00:00.000Z
   - format: 2D
     note: ""
-    date: 2024-01-28T19:00:00-06:00
+    date: 2024-01-29T01:00:00.000Z
 studioInfo:
   studio: Not Specified
   studioFee: 0

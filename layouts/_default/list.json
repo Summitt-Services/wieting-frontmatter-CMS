@@ -3,12 +3,18 @@
     {{ $title := .Title }}
     {{ $url := .Permalink | absURL }}
     {{ range $k, $_ := .Params.occurrences }}  
-      {{ if or $j $k }},{{ end }} 
+      {{ if or $j $k }},{{ end }}
+      {{ $d := time.AsTime $_.date }}
+      {{ $lt := $d.Local }}
       {
         "title": "{{ $title }}",
-        "date": "{{ dateFormat "2006-01-02T15:04:00-0700" .date }}",
+        "date": "{{ dateFormat "2006-01-02T15:04:05Z" $lt }}",
         "url": "{{ $url }}"
       }
     {{ end }}  
   {{ end }}
 ]
+
+
+
+

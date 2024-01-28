@@ -1,12 +1,17 @@
+---
+{
+  "draft": false
+}
+---
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
 
-  "frontMatter.taxonomy.dateFormat": "PPppp",
+  "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH:mm:ssx",
 
   "frontMatter.taxonomy.fieldGroups": [
     {
-      "id": "occurrences",
-      "labelField": "occurrences",
+      "id": "occurrence",
+      "labelField": "occurrence",
       "fields": [
         {
           "title": "Date and Time",
@@ -17,7 +22,34 @@
         {
           "title": "Note",
           "name": "note",
-          "type": "string"
+          "type": "string",
+          "single": true
+        }
+      ]
+    },
+
+    {
+      "id": "show_occurrence",
+      "labelField": "occurrence",
+      "fields": [
+        {
+          "title": "Date and Time",
+          "name": "date",
+          "type": "datetime",
+          "single": true
+        },
+        {
+          "title": "Note",
+          "name": "note",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Format",
+          "name": "format",
+          "type": "choice",
+          "choices": [ "2D", "3D", "Not Applicable" ]
+
         }
       ]
     }
@@ -37,7 +69,7 @@
           "description": "Consider appending the event date to the end of the title like this example... 'Private Event - 2022-03-09'.  Doing so helps differentiate events that otherwise would have identical Titles."
         },
         {
-          "title": "First occurrence Date",
+          "title": "First Occurrence Date",
           "name": "date",
           "type": "datetime",
           "required": true,
@@ -59,22 +91,117 @@
           "description": "Set to 'true' if you want to NOT publish this Event"
         },
         {
-          "title": "occurrences",
+          "title": "Occurrences",
           "name": "occurrences",
           "type": "block",
-          "fieldGroup": "occurrences"
+          "fieldGroup": "occurrence"
+        }
+      ]
+    },
+
+    {
+      "name": "show",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "The show's full title."
+        },
+        {
+          "title": "First Occurrence Date",
+          "name": "date",
+          "type": "datetime",
+          "required": true,
+          "dateFormat": "yyyy-MM-dd",
+          "description": "Specify the FIRST showing date. This will become part of the filename AND determine where it sorts/appears in our shows list."
+        },
+        {
+          "title": "Date Range String",
+          "name": "dateRange",
+          "type": "string",
+          "required": true,
+          "description": "Specify a short (16 char. max.) date range string like 'Jan 29 - Feb 2' or 'Jul 2-5'."
+        },
+        {
+          "title": "Short Title",
+          "name": "shortTitle",
+          "type": "string",
+          "required": true,
+          "description": "Specify a short (20 char. max.) title for display on our marquee page."
+        },
+        {
+          "title": "One Sheet Image",
+          "name": "oneSheet",
+          "type": "image"
+        },
+        {
+          "title": "Show Type",
+          "name": "showType",
+          "type": "choice",
+          "choices": [ "Closed", "Cinema", "Animated Cinema", "Live Performance", "Meeting", "Social Event", "Private" ]
+        },
+        {
+          "title": "Running Time (Minutes)",
+          "name": "runningTime",
+          "type": "number",
+          "default": 90
+        },
+        {
+          "title": "MPAA Rating",
+          "name": "mpaaRating",
+          "type": "choice",
+          "choices": [ "G", "PG", "PG-13", "NC-17", "R", "Not Rated" ]
+        },
+        {
+          "title": "IMDB URL",
+          "name": "imdbURL",
+          "type": "string"
+        },
+        {
+          "title": "Occurrences",
+          "name": "occurrences",
+          "type": "block",
+          "fieldGroup": "show_occurrence"
+        },
+        {
+          "title": "Studio Info",
+          "name": "studioInfo",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "Studio",
+              "name": "studio",
+              "type": "string"
+            },
+            {
+              "title": "Studio Fee ($)",
+              "name": "studioFee",
+              "type": "number"
+            },
+            {
+              "title": "Studio Percentage",
+              "name": "studioPercentage",
+              "type": "number"
+            }
           ]
+        },
+        {
+          "title": "Draft",
+          "name": "draft",
+          "type": "draft"
         }
       ]
     }
   ],
-
   "frontMatter.framework.id": "hugo",
 
   "frontMatter.content.publicFolder": "static",
-
+  
   "frontMatter.preview.host": "http://localhost:1313",
-
+  
   "frontMatter.content.pageFolders": [
     {
       "title": "active-shows",
