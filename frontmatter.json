@@ -1,12 +1,9 @@
----
-{
-  "draft": false
-}
----
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
 
   "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH:mm:ssx",
+
+  "frontMatter.taxonomy.prefix": null,
 
   "frontMatter.taxonomy.fieldGroups": [
     {
@@ -77,6 +74,14 @@
           "description": "Specify the FIRST date of this event. This will become part of the events's filename AND determine where it sorts/appears in our events list."
         },
         {
+          "title": "File Name",
+          "name": "slug",
+          "type": "slug",
+          "editable": true,
+          "default": "{{slug}}",
+          "description": "The file name, or slug, is automatically created using the Title.  Consider prefixing that with the date of the event opening, like '2024-01-01-Title' to help with sorting markdown files."
+        },
+        {
           "title": "Event Duration (in Minutes)",
           "name": "durationMinutes",
           "type": "number",
@@ -85,17 +90,17 @@
           "description": "Enter the event duration in minutes."
         },
         {
+          "title": "Occurrences",
+          "name": "occurrences",
+          "type": "block",
+          "fieldGroup": "occurrence"
+        },
+        {
           "title": "Draft",
           "name": "draft",
           "type": "draft",
           "description": "Set to 'true' if you want to NOT publish this Event"
         },
-        {
-          "title": "Occurrences",
-          "name": "occurrences",
-          "type": "block",
-          "fieldGroup": "occurrence"
-        }
       ]
     },
 
@@ -116,7 +121,15 @@
           "type": "datetime",
           "required": true,
           "dateFormat": "yyyy-MM-dd",
-          "description": "Specify the FIRST showing date. This will become part of the filename AND determine where it sorts/appears in our shows list."
+          "description": "Specify the FIRST showing date. This will determine how it sorts/appears in our shows list."
+        },
+        {
+          "title": "File Name",
+          "name": "slug",
+          "type": "slug",
+          "editable": true,
+          "default": "{{slug}}",
+          "description": "The file name, or slug, is automatically created using the Title.  Consider prefixing that with the date of the show's opening, like '2024-01-01-Title' to help with sorting markdown files."
         },
         {
           "title": "Date Range String",
@@ -141,6 +154,7 @@
           "title": "Show Type",
           "name": "showType",
           "type": "choice",
+          "single": true,
           "choices": [ "Closed", "Cinema", "Animated Cinema", "Live Performance", "Meeting", "Social Event", "Private" ]
         },
         {
@@ -153,6 +167,7 @@
           "title": "MPAA Rating",
           "name": "mpaaRating",
           "type": "choice",
+          "single": true,
           "choices": [ "G", "PG", "PG-13", "NC-17", "R", "Not Rated" ]
         },
         {
