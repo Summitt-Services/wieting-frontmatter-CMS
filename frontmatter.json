@@ -57,6 +57,7 @@
       "name": "event",
       "pageBundle": false,
       "previewPath": null,
+      "filePrefix": null,
       "fields": [
         {
           "title": "Title",
@@ -107,6 +108,7 @@
     {
       "name": "show",
       "pageBundle": false,
+      "filePrefix": null,
       "fields": [
         {
           "title": "Title",
