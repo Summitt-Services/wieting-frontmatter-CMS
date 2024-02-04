@@ -4,21 +4,23 @@ fs = require('fs');
 // from https://stackoverflow.com/questions/25460574/find-files-by-extension-html-under-a-folder-in-nodejs
 function fromDir(startPath, filter, callback) {
 
-    // console.log('Starting from dir '+startPath+'/');
+  console.log('Starting from dir: ', startPath);
 
-    if (!fs.existsSync(startPath)) {
-        console.log("Starting directory does not exist: ", startPath);
-        return;
-    }
+  if (!fs.existsSync(startPath)) {
+    console.log("Starting directory does not exist: ", startPath);
+    return;
+  }
 
-    var files = fs.readdirSync(startPath);
-    for (var i = 0; i < files.length; i++) {
-        var filename = path.join(startPath, files[i]);
-        var stat = fs.lstatSync(filename);
-        if (stat.isDirectory()) {
-            fromDir(filename, filter, callback); // recurse
-        } else if (filter.test(filename)) callback(filename);
+  var files = fs.readdirSync(startPath);
+  for (var i = 0; i < files.length; i++) {
+    var filename = path.join(startPath, files[i]);
+    var stat = fs.lstatSync(filename);
+    if (! /\/\./.test(filename)) {       // skip hidden directories and files      
+      if (stat.isDirectory()) {
+        fromDir(filename, filter, callback); // recurse
+      } else if (filter.test(filename)) callback(filename);
     };
+  };
 };
 
 // from https://www.tutorialspoint.com/reading-a-text-file-into-an-array-in-node-js
@@ -54,29 +56,46 @@ function findFinal(matches) {
   );
   var final = most_recent.match(expr);
   console.log('Final occurrence: ', final[0]); 
+  return final[0];
+}
+
+// inspired by https://stackoverflow.com/questions/15063670/compare-string-with-todays-date-in-javascript
+//   and https://www.w3schools.com/jsref/jsref_replace.asp
+function update_path(old_path, final_date) {
+  var today = new Date();
+  var final = new Date(final_date + " 23:00:00");
+  var new_path = old_path
+
+  if (today > final) {           // all occurrences are in the past
+    new_path = old_path.replace("/active/", "/past/");
+  } else {                       // final occurrence is still active
+    new_path = old_path.replace("/past/", "/active/");    // in case final occurrence changed
+  }
+
+  // inspried by https://www.geeksforgeeks.org/node-js-fs-rename-method/
+  new_path = new_path.replace(/\d{4}-\d{2}-\d{2}/, final_date);
+  // new_path = new_path.replace(/undefined/, final_date);
+  if (new_path != old_path) {       // Rename the file 
+    fs.rename(old_path, new_path, 
+      () => {
+        console.log("File renamed to: ", new_path);
+    });
+  }
 }
 
 // from https://stackoverflow.com/questions/25460574/find-files-by-extension-html-under-a-folder-in-nodejs
 //   and https://www.tutorialspoint.com/reading-a-text-file-into-an-array-in-node-js
-fromDir('./content/event', /\.md$/, function(filename) {
-    console.log('-- found: ', filename);
-    txt = readFileLines(filename);
+fromDir('./content/event', /\.md$/, function(file_path) {
+    console.log('-- found: ', file_path);
+    txt = readFileLines(file_path);
     final = findFinalOccurrenceDate(txt);
-    // // from https://stackoverflow.com/questions/17614123/node-js-how-to-write-an-array-to-file
-    // fs.writeFile(
-    //   './my.json',
-    //   JSON.stringify(arr),
-    //   function (err) {
-    //       if (err) {
-    //           console.error('Crap happens');
-    //       }
-    //   }
-    // );
+    if (final) { update_path(file_path, final); }
   });
 
-  fromDir('./content/show', /\.md$/, function(filename) {
-    console.log('-- found: ', filename);
-    txt = readFileLines(filename);
+  fromDir('./content/show', /\.md$/, function(file_path) {
+    console.log('-- found: ', file_path);
+    txt = readFileLines(file_path);
     final = findFinalOccurrenceDate(txt);
+    if (final) { update_path(file_path, final); }
   });
 

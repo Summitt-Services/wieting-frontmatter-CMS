@@ -10,13 +10,13 @@ runningTime: 102
 mpaaRating: G
 imdbURL: https://m.imdb.com/title/tt0032138/
 occurrences:
-  - date: 2024-02-10T01:00:00.000Z
+  - date: 2024-02-09 19:00:00-0600
     format: 2D
     fieldGroup: show_occurrence
-  - date: 2024-02-11T01:00:00.000Z
+  - date: 2024-02-10 19:00:00-0600
     format: 2D
     fieldGroup: show_occurrence
-  - date: 2024-02-12T01:00:00.000Z
+  - date: 2024-02-11 19:00:00-0600
     format: 2D
     fieldGroup: show_occurrence
 studioInfo:
