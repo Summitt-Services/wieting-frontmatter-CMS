@@ -11,13 +11,13 @@ imdbURL: https://www.imdb.com/title/tt11762114/
 occurrences:
   - format: 2D
     note: ""
-    date: 2024-01-20T01:00:00.000Z
+    date: 2024-01-19 19:00:00-0600
   - format: 2D
     note: ""
-    date: 2024-01-21T01:00:00.000Z
+    date: 2024-01-20 19:00:00-0600
   - format: 2D
     note: ""
-    date: 2024-01-22T01:00:00.000Z
+    date: 2024-01-21 19:00:00-0600
 studioInfo:
   studio: Not Specified
   studioFee: 0

@@ -5,13 +5,13 @@ draft: true
 occurrences:
   - format: 2D
     note: ""
-    date: 2024-01-06T01:00:00.000Z
+    date: 2024-01-05 19:00:00-0600
   - format: 2D
     note: ""
-    date: 2024-01-07T01:00:00.000Z
+    date: 2024-01-06 19:00:00-0600
   - format: 2D
     note: ""
-    date: 2024-01-08T01:00:00.000Z
+    date: 2024-01-07 19:00:00-0600
 type: show
 dateRange: Jan 5 - 7
 shortTitle: The Shift
