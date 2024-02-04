@@ -65,7 +65,6 @@
       "name": "event",
       "pageBundle": false,
       "previewPath": null,
-      "filePrefix": null,
       "fields": [
         {
           "title": "Title",
@@ -80,7 +79,7 @@
           "type": "datetime",
           "required": true,
           "dateFormat": "yyyy-MM-dd",
-          "description": "Specify the FIRST date of this event. This will become part of the events's filename AND determine where it sorts/appears in our events list."
+          "description": "Specify the FIRST date of this event."
         },
         {
           "title": "File Name",
@@ -116,7 +115,6 @@
     {
       "name": "show",
       "pageBundle": false,
-      "filePrefix": null,
       "fields": [
         {
           "title": "Title",
@@ -131,7 +129,7 @@
           "type": "datetime",
           "required": true,
           "dateFormat": "yyyy-MM-dd",
-          "description": "Specify the FIRST showing date. This will determine how it sorts/appears in our shows list."
+          "description": "Specify the FIRST showing date."
         },
         {
           "title": "File Name",
@@ -139,7 +137,7 @@
           "type": "slug",
           "editable": true,
           "default": "{{slug}}",
-          "description": "The file name, or slug, is automatically created using the Title.  Consider prefixing that with the date of the show's opening, like '2024-01-01-Title' to help with sorting markdown files."
+          "description": "The file name, or slug, is automatically created using the Title."
         },
         {
           "title": "Date Range String",

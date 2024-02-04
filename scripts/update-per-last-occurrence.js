@@ -48,12 +48,12 @@ function findFinal(matches) {
   const re = /\d{4}-\d{2}-\d{2}/
   var expr = new RegExp(re, "gi");
   let most_recent = matches.reduce((mostRecent, item) =>
-     item > mostRecent 
-     ? item
-     : mostRecent
+    item > mostRecent 
+    ? item
+    : mostRecent
   );
   var final = most_recent.match(expr);
-  console.log(final[0]); 
+  console.log('Final occurrence: ', final[0]); 
 }
 
 // from https://stackoverflow.com/questions/25460574/find-files-by-extension-html-under-a-folder-in-nodejs
