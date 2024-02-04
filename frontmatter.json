@@ -1,6 +1,14 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
 
+  "frontMatter.custom.scripts": [
+    {
+      "id": "update-per-last-occurrence",
+      "title": "Update events and shows based on last occurence",
+      "script": "./scripts/update-per-last-occurrence.js"
+    }
+  ],
+
   "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH:mm:ssxx",
 
   "frontMatter.taxonomy.slugPrefix": "",
@@ -101,7 +109,7 @@
           "name": "draft",
           "type": "draft",
           "description": "Set to 'true' if you want to NOT publish this Event"
-        },
+        }
       ]
     },
 
