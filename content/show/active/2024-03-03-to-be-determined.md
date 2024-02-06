@@ -2,7 +2,7 @@
 title: To Be Determined
 date: 2024-02-23
 slug: to-be-determined
-dateRange: Feb 23-25, and Mar 1-3
+dateRange: Feb 23-25 and Mar 1-3
 shortTitle: To Be Determined
 oneSheet: /one-sheet-images/_default_no-image-available.png
 showType: Cinema
