@@ -1,8 +1,8 @@
 ---
 title: To Be Determined
-date: 2024-02-16
+date: 2024-02-23
 slug: to-be-determined
-dateRange: Feb 16-18, 23-25, and Mar 1-3
+dateRange: Feb 23-25, and Mar 1-3
 shortTitle: To Be Determined
 oneSheet: /one-sheet-images/_default_no-image-available.png
 showType: Cinema
@@ -10,12 +10,6 @@ runningTime: 90
 mpaaRating: Not Rated
 imdbURL: ""
 occurrences:
-  - date: 2024-02-16 19:00:00-0600
-    fieldGroup: show_occurrence
-  - date: 2024-02-17 19:00:00-0600
-    fieldGroup: show_occurrence
-  - date: 2024-02-18 19:00:00-0600
-    fieldGroup: show_occurrence
   - date: 2024-02-23 19:00:00-0600
     fieldGroup: show_occurrence
   - date: 2024-02-24 19:00:00-0600
