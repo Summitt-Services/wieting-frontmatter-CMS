@@ -78,7 +78,7 @@
           "name": "date",
           "type": "datetime",
           "required": true,
-          "dateFormat": "yyyy-MM-dd",
+          "dateFormat": "yyyy-MM-dd HH:mmxx",
           "description": "Specify the FIRST date of this event."
         },
         {
@@ -128,7 +128,7 @@
           "name": "date",
           "type": "datetime",
           "required": true,
-          "dateFormat": "yyyy-MM-dd",
+          "dateFormat": "yyyy-MM-dd HH:mmxx",
           "description": "Specify the FIRST showing date."
         },
         {
