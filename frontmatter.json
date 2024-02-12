@@ -78,8 +78,8 @@
           "name": "date",
           "type": "datetime",
           "required": true,
-          "dateFormat": "yyyy-MM-dd HH:mmxx",
-          "description": "Specify the FIRST date of this event."
+          "dateFormat": "yyyy-MM-dd",
+          "description": "Specify the FIRST event date in local time."
         },
         {
           "title": "File Name",
@@ -128,8 +128,8 @@
           "name": "date",
           "type": "datetime",
           "required": true,
-          "dateFormat": "yyyy-MM-dd HH:mmxx",
-          "description": "Specify the FIRST showing date."
+          "dateFormat": "yyyy-MM-dd",
+          "description": "Specify the FIRST show date in local time."
         },
         {
           "title": "File Name",
