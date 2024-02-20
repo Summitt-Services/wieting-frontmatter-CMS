@@ -31,7 +31,7 @@
                     <!-- Display our marquee, a grid of upcoming shows -->
                     <div class="one-sheet-views-grid">
                       {{ range where .Site.RegularPages.ByDate "Type" "show" }}
-                        {{ if not (in .SectionsEntries "past") }}
+                        {{ if in .SectionsEntries "active" }}
                       	  {{ partial "marquee-show.html" . }}
                         {{ end }}  
                       {{ end }}
