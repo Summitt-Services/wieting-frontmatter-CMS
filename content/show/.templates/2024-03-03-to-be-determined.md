@@ -26,7 +26,7 @@ studioInfo:
   studio: ""
   studioFee: 0
   studioPercentage: 0
-draft: false
+draft: true
 type: show
 ---
-No booking for these dates yet.  Check here in the next few days for updates!  
+No booking for these dates yet.  Check here in the next few days for updates.
