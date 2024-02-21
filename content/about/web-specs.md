@@ -24,7 +24,7 @@ Web site promotion of your event should include the following:
 
 Two sample "poster" images are provided below as examples.
 
-{{< figure src="/img/_no-movie.png" title="Sample one-sheet / poster image" >}}
+{{< figure src="/one-sheet-images/_no-movie.png" title="Sample one-sheet / poster image" >}}
 
 {{< figure src="/img/_keep_curbside-popcorn-sales.png" title="Sample one-sheet / poster image" >}}
 
