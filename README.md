@@ -7,7 +7,7 @@ The old `README.md` files from predecessor projects are preserved here as `old-N
 ## Local Development  
 
 To run this project locally you should clone it (or `git pull`) and then from the project root directory run `hugo server`.  This should generate a local `http://localhost:1313` copy of the website for evaluation and debugging.  
-.  
+  
 # Deploy to AWS Amplify
 
 Pushing this change should trigger my first build to https://main.d2hqwupnoud3ca.amplifyapp.com/.  
