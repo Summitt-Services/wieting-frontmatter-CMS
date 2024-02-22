@@ -10,13 +10,13 @@ runningTime: 90
 mpaaRating: Not Rated
 imdbURL: ""
 occurrences:
-  - date: 2024-03-14T00:00:00.000Z
+  - date: 2024-03-13T19:00:00-0600
     format: Not Applicable
     fieldGroup: show_occurrence
 studioInfo:
   studio: ""
   studioFee: 0
   studioPercentage: 0
-draft: true
+draft: false
 type: show
 ---

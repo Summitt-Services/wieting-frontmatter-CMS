@@ -4,8 +4,8 @@ date: 2024-06-01
 slug: private-rental-6-1-24
 durationMinutes: 300
 occurrences:
-  - date: 2024-06-01T18:00:00.000Z
+  - date: 2024-06-01T13:00:00-0500
     fieldGroup: occurrence
-draft: true
+draft: false
 type: event
 ---
