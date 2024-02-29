@@ -1,8 +1,8 @@
 ---
 title: "Ghostbusters: Frozen Empire"
-date: 2024-03-22
-slug: ghostbusters-frozen-empire
-dateRange: Mar 22-24
+date: 2024-03-29
+slug: ghostbusters-frozen-empire-b
+dateRange: Mar 29-31
 shortTitle: Ghostbusters
 oneSheet: /one-sheet-images/ghostbusters.jpg
 showType: Cinema
@@ -10,17 +10,13 @@ runningTime: 125
 mpaaRating: PG-13
 imdbURL: https://www.imdb.com/title/tt21235248/?ref_=tt_mv_close
 occurrences:
-  - date: 2024-03-22 19:00:00-0500
+  - date: 2024-03-29 19:00:00-0500
     format: 2D
     fieldGroup: show_occurrence
-  - date: 2024-03-23 19:00:00-0500
+  - date: 2024-03-30 19:00:00-0500
     format: 2D
     fieldGroup: show_occurrence
-  - date: 2024-03-24 14:00:00-0500
-    format: 2D
-    note: Special matinee showing!
-    fieldGroup: show_occurrence
-  - date: 2024-03-24 19:00:00-0500
+  - date: 2024-03-31 19:00:00-0500
     format: 2D
     fieldGroup: show_occurrence
 studioInfo:
