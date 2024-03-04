@@ -16,6 +16,10 @@ occurrences:
   - date: 2024-03-09 19:00:00-0600
     format: 2D
     fieldGroup: show_occurrence
+  - date: 2024-03-10 14:00:00-0500
+    note: Special matinee showing!
+    format: 2D
+    fieldGroup: show_occurrence
   - date: 2024-03-10 19:00:00-0500
     format: 2D
     fieldGroup: show_occurrence
