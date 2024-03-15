@@ -9,6 +9,8 @@
     }
   ],
 
+  "frontMatter.git.enabled": true,
+
   "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH:mm:ssxx",
 
   "frontMatter.taxonomy.slugPrefix": "",
