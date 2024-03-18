@@ -30,3 +30,4 @@ studioInfo:
 draft: false
 type: show
 ---
+In this classic American tale, "the four March daughters—Meg, Jo, Beth and Amy—continue to live in the hearts of readers, causing smiles and tears, triumph and tragedy as they grow up, fall in love, and face life." 
