@@ -20,4 +20,4 @@ studioInfo:
 draft: false
 type: show
 ---
-Monthly Tama Co. Historical Society program at the Wieting.  
+Elizabeth Ledvina took her first Honor Flight as an escort for her dear friend Robert Reinbecht, a World War II veteran and former Prisoner of War. Her second flight was escorting a veteran from Cedar Rapids. During her talk, Elizabeth will share her experiences on these flights, and how local veterans can take advantage of the opportunity. 
