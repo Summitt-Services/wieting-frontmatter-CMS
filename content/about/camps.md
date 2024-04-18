@@ -12,16 +12,17 @@ menu:
     weight: 805
 ---
 
-# 2023 - Summer Camps are Back!
+# 2024 - Summer Camps are Back!
 
-## Children's Theatre Camp - The Secret of the Sphinx
+## Children's Theatre Camp - The School for Spies
 
-![2023 Theatre Camp Poster](/img/Summer-Theatre-Camp-2023.png)
+![2024 Theatre Camp Poster](/img/Spies-Camp.png)
 
-Information and a registration form for current 2nd graders and up that are interested in **Children's Theatre Camp** July 17-21, is available to [download and print here](/pdf/camp-2023-registration-form.pdf).
+Information and a registration form for current 2nd graders and up that are interested in **Children's Theatre Camp** July 15-19, is available to [download and print here](/pdf/Spies-Registration-Camp-Form-final-english.pdf).  A Spanish version of the form is also available [here](/pdf/Spanish-Spies-Registration-Camp-Form.pdf).  
 
 <hr/>
 
+<!-- 
 ## STEM Camp - The Power of Air
 
 ![STEM Camp Poster](/img/Power-of-Air-STEM-camp.png)
@@ -52,3 +53,5 @@ Information and a registration form for current 2nd graders and up that are inte
 ![STEM Camp Poster](/img/_high-flying-fun-camp-2022-edits-1-copy.jpg)
 
 Information and a registration form for 3rd-5th graders interested in **STEM Camp - The Power of Air**, August 1-4, is available to [download and print here](/img/_high-flying-fun-camp-2022-edits-1.pdf).
+
+-->
