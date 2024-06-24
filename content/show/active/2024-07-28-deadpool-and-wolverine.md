@@ -23,7 +23,7 @@ studioInfo:
   studio: ""
   studioFee: 0
   studioPercentage: 0
-draft: true
+draft: false
 type: show
 ---
 Wolverine is recovering from his injuries when he crosses paths with the loudmouth Deadpool. They team up to defeat a common enemy.
