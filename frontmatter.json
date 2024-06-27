@@ -1,6 +1,5 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
-
   "frontMatter.custom.scripts": [
     {
       "id": "update-per-last-occurrence",
@@ -8,13 +7,9 @@
       "script": "./scripts/update-per-last-occurrence.js"
     }
   ],
-
   "frontMatter.git.enabled": true,
-
   "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH:mm:ssxx",
-
   "frontMatter.taxonomy.slugPrefix": "",
-
   "frontMatter.taxonomy.fieldGroups": [
     {
       "id": "occurrence",
@@ -34,7 +29,6 @@
         }
       ]
     },
-
     {
       "id": "show_occurrence",
       "labelField": "occurrence",
@@ -55,13 +49,15 @@
           "title": "Format",
           "name": "format",
           "type": "choice",
-          "choices": [ "2D", "3D", "Not Applicable" ]
-
+          "choices": [
+            "2D",
+            "3D",
+            "Not Applicable"
+          ]
         }
       ]
     }
   ],
-
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "event",
@@ -113,7 +109,6 @@
         }
       ]
     },
-
     {
       "name": "show",
       "pageBundle": false,
@@ -165,7 +160,15 @@
           "name": "showType",
           "type": "choice",
           "single": true,
-          "choices": [ "Closed", "Cinema", "Animated Cinema", "Live Performance", "Meeting", "Social Event", "Private" ]
+          "choices": [
+            "Closed",
+            "Cinema",
+            "Animated Cinema",
+            "Live Performance",
+            "Meeting",
+            "Social Event",
+            "Private"
+          ]
         },
         {
           "title": "Running Time (Minutes)",
@@ -178,7 +181,14 @@
           "name": "mpaaRating",
           "type": "choice",
           "single": true,
-          "choices": [ "G", "PG", "PG-13", "NC-17", "R", "Not Rated" ]
+          "choices": [
+            "G",
+            "PG",
+            "PG-13",
+            "NC-17",
+            "R",
+            "Not Rated"
+          ]
         },
         {
           "title": "IMDB URL",
@@ -217,16 +227,23 @@
           "title": "Draft",
           "name": "draft",
           "type": "draft"
+        },
+        {
+          "title": "durationMinutes",
+          "name": "durationMinutes",
+          "type": "number"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
         }
       ]
     }
   ],
   "frontMatter.framework.id": "hugo",
-
   "frontMatter.content.publicFolder": "static",
-  
   "frontMatter.preview.host": "http://localhost:1313",
-  
   "frontMatter.content.pageFolders": [
     {
       "title": "active-shows",
