@@ -3,7 +3,8 @@ showActiveNav: true
 containerMaxWidth: 1800px
 dateFormat: Jan 2, 2006
 # homeText: We are closed tonight (January 12) due to travel not advised. Please stay safe and check back tomorrow for further updates.
-homeText: The Wieting's schedule is subject to change without notice. Please check often for updates!
+# homeText: The Wieting's schedule is subject to change without notice. Please check often for updates!
+homeText: The Wieting has experienced an equipment failure so there will be NO MOVIE on Sunday, July 7.  We are working diligently to make repairs and hope to reschedule the movie very soon.  Sorry for the inconvenience. 
 footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
 hideFooter: false
 katex: false

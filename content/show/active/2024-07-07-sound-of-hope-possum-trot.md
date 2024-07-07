@@ -7,11 +7,13 @@ occurrences:
     fieldGroup: occurrence
   - date: 2024-07-06 19:00:00-0500
     fieldGroup: occurrence
+    note: POSTPONED due to equipment failure!  Sorry!
   - date: 2024-07-07 19:00:00-0500
     fieldGroup: occurrence
+    note: POSTPONED due to equipment failure!  Sorry!
 draft: false
 type: show
-dateRange: July 5-7
+dateRange: July 5
 shortTitle: Sound of Hope
 oneSheet: /one-sheet-images/soundofhope.jpg
 showType: Cinema
