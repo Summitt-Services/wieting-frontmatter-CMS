@@ -4,7 +4,7 @@ containerMaxWidth: 1800px
 dateFormat: Jan 2, 2006
 # homeText: We are closed tonight (January 12) due to travel not advised. Please stay safe and check back tomorrow for further updates.
 # homeText: The Wieting's schedule is subject to change without notice. Please check often for updates!
-homeText: The Wieting has experienced an equipment failure so there will be NO MOVIE on Sunday, July 7.  We are working diligently to make repairs and hope to reschedule the movie very soon.  Sorry for the inconvenience. 
+homeText: Our equipment is working again so we will be showing last weekend's feature twice on Sunday, July 14. We won't be able to fully test the repairs until just before showtime on Sunday afternoon, so keep your fingers crossed for us.  See ya' at the Wieting!
 footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
 hideFooter: false
 katex: false
