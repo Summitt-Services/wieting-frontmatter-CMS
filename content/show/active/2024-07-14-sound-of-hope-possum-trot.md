@@ -19,3 +19,4 @@ runningTime: 127
 mpaaRating: PG-13
 imdbURL: https://www.imdb.com/title/tt6881490/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_sound%2520of%2520hope
 ---
+The true story of Donna and Reverend WC Martin and their church in East Texas, in which 22 families adopted 77 children from the local foster system, igniting a movement for vulnerable children everywhere.
