@@ -1,5 +1,5 @@
 ---
-title: Beetlejuice-Beetlejuice
+title: Beetlejuice Beetlejuice
 date: 2024-09-13
 slug: beetlejuice-beetlejuice
 dateRange: Sep 13 & 15

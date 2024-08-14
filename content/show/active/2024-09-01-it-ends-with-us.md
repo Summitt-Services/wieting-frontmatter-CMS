@@ -4,7 +4,7 @@ date: 2024-08-30
 slug: it-ends-with-us
 dateRange: Aug 30, 31 & Sep 1
 shortTitle: It Ends with Us
-oneSheet: "one-sheet-images/it-ends-with-us.png"
+oneSheet: /one-sheet-images/it-ends-with-us.png
 showType: Cinema
 runningTime: 130
 mpaaRating: PG-13

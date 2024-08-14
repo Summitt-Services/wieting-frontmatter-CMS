@@ -1,5 +1,5 @@
 ---
-title: Old-Ice-Cream-Makers
+title: Old Ice Cream Makers
 date: 2024-08-14
 slug: ice-cream-makers
 dateRange: August 14
