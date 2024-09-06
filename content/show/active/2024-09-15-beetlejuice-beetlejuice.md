@@ -1,7 +1,7 @@
 ---
 title: Beetlejuice Beetlejuice
 date: 2024-09-13
-slug: beetlejuice-beetlejuice
+slug: beetlejuice-beetlejuice2
 dateRange: Sep 13 & 15
 shortTitle: Beetlejuice Beetlejuice
 oneSheet: /one-sheet-images/Beetlejuice-Beetlejuice.png
