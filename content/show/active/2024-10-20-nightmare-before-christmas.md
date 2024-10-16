@@ -1,5 +1,5 @@
 ---
-title: Nightmare-before-Christmas
+title: The Nightmare Before Christmas
 date: 2024-10-18
 slug: nightmare-christmas
 dateRange: Oct 18 and 20
