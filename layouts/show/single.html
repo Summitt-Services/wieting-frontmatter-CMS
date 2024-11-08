@@ -96,7 +96,9 @@
                   {{ $dtime := time .date }}
                   {{ dateFormat "Monday - January 2 @ 3:04 PM" $dtime.Local }}
                   {{ if .format }} 
-                    <b> [{{ .format }}]</b>
+                    {{ if not (hasPrefix .format "Not") }}}}
+                      <b> [{{ .format }}]</b>
+                    {{ end }}  
                   {{ end }}
                   {{ if .note }}   
                     <i><b>&nbsp;&nbsp;{{ .note }}</b></i> 
