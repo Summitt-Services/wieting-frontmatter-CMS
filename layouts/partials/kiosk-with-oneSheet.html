@@ -1,0 +1,53 @@
+      <!-- left block -->
+      <div class="show-left-block">
+        <div class="field field--name-field-one-sheet field--type-image">
+          <img src="{{ .context.Params.oneSheet }}" width="100%" alt="Sorry, this image has been removed to conserve disk space." typeof="foaf:Image" class="img-responsive" />
+        </div>
+      </div>  
+
+      <!-- right block -->
+      <div class="show-right-block">
+        {{ if .context.Params.occurrences }}
+        <!--  <hr/> -->
+        {{ end }}
+        <div class="remaining_details">
+          <div class="field field--name-field-occurrence-times field--type-datetime">
+            {{ if in .context.Params.dateRange "Soon" }}
+              <p class="field--item">
+                Coming Soon to the Wieting! 
+              </p>  
+            {{ else }}     
+              <div class="kiosk-details">
+                {{- .context.Params.dateRange -}}
+              </div>
+            {{ end }}      
+            {{ if .context.Params.mpaaRating }}
+              {{ if not (in .context.Params.mpaaRating "Not") }}
+                <div class="kiosk-secondary show-rating">
+                  <span class="field--label">MPAA Rating: </span>
+                  <span class="field--item-bold">{{- .context.Params.mpaaRating -}}</span>
+                  {{ if eq .context.Params.mpaaRating "R" }}
+                    <p class="rated-r">Rated R: Restricted – Under 17 requires accompanying parent or adult guardian. A parent or adult guardian must accompany and remain seated with anyone under age 17.</p>
+                  {{ end }} 
+                </div>
+              {{ end }}  
+            {{ end }}
+
+            {{ if .context.Params.runningTime }}
+              <div class="kiosk-secondary running-time">
+                <span class="field--label">Running Time: </span>
+                <span content="10" class="field--item-bold">{{- .context.Params.runningTime }} minutes</span>
+              </div>
+            {{ end }}
+
+            <!-- {{ if .context.Params.audio }}
+              <audio id="clip-audio-{{- .position }}" autoplay>
+                <source src="{{ .context.Params.audio }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            {{ end }} -->
+
+            <br/>
+          </div>
+        </div>
+      </div>  

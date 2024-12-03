@@ -1,0 +1,115 @@
+<style>
+
+    div.show-title {
+      margin-left: 10px;
+      /* margin-top: 20px !important;
+      margin-bottom: 5px !important; */
+    }
+
+    div.kiosk-details {
+      text-align: center;
+      font-weight: 800;
+      font-size: 2em;
+    }
+
+    div.kiosk-secondary {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+
+    span.big-bold {
+      font-size: 1.5em;
+      font-weight: 800;
+    }
+
+    div.single-show {
+      margin: 20px 10px 0;
+      width: 100%;
+    }
+
+    div.synopsis p {
+      line-height: 1.4em;
+    }
+
+    .single-column {
+      position: absolute;
+      top: 0;
+      animation: scroll 60s linear 10s infinite;
+    }
+
+    span.show-container {
+      min-width: 290px;
+      min-height: 450px;
+      display: block;
+      /* margin: 15px; */
+    }
+
+    nav.menu {
+      display: none;
+    }
+
+    footer {
+      display: none;
+    }
+
+    .single-column {
+      width: 100%;
+    }
+
+    .show-container {
+      margin: 5px;
+      padding: 2px;
+      width: 100%;
+      min-height: 450px;
+    }
+
+    .show-left-block {
+      width: 100%;
+      vertical-align: top;
+      min-width: 185px;
+      min-height: 600px;
+    }
+
+    .show-right-block {
+      vertical-align: top;
+    }
+
+    div.field--name-field-one-sheet img {
+      display: block;
+      border: 2px solid black;
+      border-radius: 3px;
+    }
+
+    p.rated-r {
+      color: red;
+      font-weight: bold;
+    }
+
+</style>
+
+
+<div class="single-show">
+
+  <div class="show-title">
+    <h1>{{ .context.Title }}</h1>
+  </div>
+
+  <div class="content">
+    <span class="show-container">
+      
+      {{ if .context.Params.additionalDuration }}
+        <span id="duration-{{- .position }}" duration="{{ mul .context.Params.additionalDuration 1000 }}">
+      {{ else }}    
+        <span id="duration-{{- .position }}" duration="0">
+      {{ end }}    
+
+      {{ if .context.Params.oneSheet }}
+        {{ partial "kiosk-with-oneSheet" . }}
+      {{ else }}
+        {{ partial "kiosk-advertisement" . }}
+      {{ end }}
+
+    </span>
+  </div>
+</div>

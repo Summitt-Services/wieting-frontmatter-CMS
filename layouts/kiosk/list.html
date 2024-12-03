@@ -139,9 +139,8 @@
       {{ $position := 0 }}
       {{- range $paginator.Pages.Reverse -}}
         <!-- Exclude /past pages from the pre-show! -->
-        {{/* if strings.Contains .Permalink "show/active" */}}
         {{ if not (strings.Contains .Permalink "/past") }}
-          {{ partial "single-show" (dict "context" . "position" $position ) }}
+          {{ partial "single-kiosk" (dict "context" . "position" $position ) }}
         {{ end }}
         {{ $position = add $position 1 }}
       {{ end }}

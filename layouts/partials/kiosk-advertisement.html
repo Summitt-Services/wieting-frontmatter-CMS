@@ -1,0 +1,38 @@
+      <style>
+        img.ad-banner {
+          width: 100%;
+        }
+      </style>  
+
+      <!-- left block -->
+      <div class="was-show-left-block">
+        <div class="was-field--name-field-one-sheet">
+          {{ if .context.Params.bannerImage }}
+            <img src="{{ .context.Params.bannerImage }}" width="80%" alt="Sorry, this image has been removed to conserve disk space." typeof="foaf:Image" class="img-responsive ad-banner" />
+            <p/>
+          {{ end }}
+          
+          {{ if .context.Params.mp4 }} 
+            <div id="pre-show-video">
+              <video id="clip-video-{{- .position }}" width="100%" height="80%" autoplay muted>
+                <source src="/mp4/{{ .context.Params.mp4 }}" type="video/mp4">
+                  Sorry, your browser doesn't support embedded videos.
+              </video>
+            </div>
+          {{ end }}    
+        </div>
+      </div>  
+
+      <!-- right block -->
+      <div class="was-show-right-block">
+        <p>
+          <div class="synopsis">{{ .context.Content }}</div>
+        </p>
+
+        <!-- {{ if .context.Params.audio }}
+          <audio id="clip-audio-{{- .position }}" autoplay>
+            <source src="{{ .context.Params.audio }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        {{ end }} -->
+      </div>  
