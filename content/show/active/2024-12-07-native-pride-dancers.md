@@ -4,7 +4,7 @@ date: 2024-12-07
 slug: native-pride-dancers
 dateRange: Dec 7
 shortTitle: Native Pride Dancers
-oneSheet: /one-sheet-images/larryyazzie.jpeg
+oneSheet: /one-sheet-images/larryyazzie.jpg
 showType: Live Performance
 runningTime: 90
 mpaaRating: ""
