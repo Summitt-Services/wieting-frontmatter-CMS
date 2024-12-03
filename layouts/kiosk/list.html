@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ `<!-- hugo: main block defined in layouts/pre-show/list.html -->` | safeHTML }}
+  {{ `<!-- hugo: main block defined in layouts/kiosk/list.html -->` | safeHTML }}
 
   <!-- Based on https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
 
@@ -126,7 +126,8 @@
   </style>
   
   <!-- From https://discourse.gohugo.io/t/howto-paginated-pages-containing-two-different-content-types/7448 -->
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" (slice "show" "common" "pre-show")) }}
+  <!-- Similar to /layouts/pre-show/list.html but excludes the "pre-show" Types -->
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" (slice "show" "common" "kiosk")) }}
 
   {{ partial "debug" $paginator.TotalPages }}
   {{ partial "debug" $paginator.HasNext }}
@@ -313,5 +314,5 @@
 
   </script>
 
-  {{ `<!-- /hugo: main block defined in layouts/pre-show/list.html -->` | safeHTML }}
+  {{ `<!-- /hugo: main block defined in layouts/kiosk/list.html -->` | safeHTML }}
 {{ end }}
