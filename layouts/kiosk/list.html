@@ -3,7 +3,7 @@
 
   <!-- Based on https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
 
-  Class "carousel__photo" becomes "single-show"
+  Class "carousel__photo" becomes "single-kiosk"
   -->
 
   <!-- The page's CSS -->
@@ -30,7 +30,7 @@
     }
 
     /* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
-    .single-show {
+    .single-kiosk {
       opacity: 0;
       position: absolute;
       top:0;
@@ -42,26 +42,26 @@
     }
 
     /* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
-    .single-show.initial,
-    .single-show.active {
+    .single-kiosk.initial,
+    .single-kiosk.active {
       opacity: 1;
       position: relative;
       z-index: 900;
     }
 
     /* Set 'z-index' to sit behind our '.active' item. */
-    .single-show.prev,
-    .single-show.next {
+    .single-kiosk.prev,
+    .single-kiosk.next {
       z-index: 800;
     }
 
     /* Translate previous item to the left */
-    .single-show.prev {
+    .single-kiosk.prev {
       transform: translateX(-100%);
     }
 
     /* Translate next item to the right */
-    .single-show.next {
+    .single-kiosk.next {
       transform: translateX(100%);
     }
 
@@ -154,7 +154,7 @@
 
     !(function(d){
       // Variables to target our base class,  get carousel items, count how many carousel items there are, set the slide to 0 (which is the number that tells us the frame we're on), and set motion to true which disables interactivity.
-      var itemClassName = "single-show";
+      var itemClassName = "single-kiosk";
           items = d.getElementsByClassName(itemClassName),
           totalItems = items.length,
           slide = 0,
