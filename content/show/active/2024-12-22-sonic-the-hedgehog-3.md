@@ -2,7 +2,7 @@
 title: Sonic the Hedgehog 3
 date: 2024-12-20
 slug: sonic-hedgehog-3
-dateRange: Dec. 20 & 22
+dateRange: Dec 20 & 22
 shortTitle: Sonic 3
 oneSheet: /one-sheet-images/Sonic3.png
 showType: Animated Cinema
