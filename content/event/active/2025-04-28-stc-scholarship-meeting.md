@@ -1,6 +1,7 @@
 ---
 title: STC Scholarship Meeting
-date: 2024-09-23
+date: 2025-04-28
+dateRange: Monthly Sep thru Apr
 slug: stc-scholarship-meeting
 durationMinutes: 60
 occurrences:

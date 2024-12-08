@@ -7,5 +7,5 @@ title: Wieting Calendar
 bannerImage: 
 audio: 
 ---
-<iframe src="/calendar/index.html" width="100%" height="2000px"></iframe>
+<iframe src="/calendar-as-a-list/index.html" width="100%" height="1000px"></iframe>
 

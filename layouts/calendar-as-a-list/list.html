@@ -1,0 +1,75 @@
+{{ define "main" }}
+  {{ `<!-- hugo: main block defined in layouts/calendar-as-a-list/list.html -->` | safeHTML }}
+
+  <!-- The page's CSS -->
+  <style>
+
+    .calendar-list-item {
+      font-weight: 600;
+      font-size: xx-large;
+      text-align: center;
+      line-height: 1.25em;
+      margin: 1em 0;
+    }
+
+
+    ul {
+      list-style-position: inside;
+    }
+
+    nav.menu {
+      display: none;
+    }
+
+    .date-style {
+      color: gray;
+    }
+
+    .show-style {
+      color: blue;
+    }
+
+    .event-style {
+      color: green;
+    }
+
+    div.calendar-list-wrapper {
+      margin-top: 2em;
+    }
+
+  </style>
+  
+  <!-- From https://discourse.gohugo.io/t/howto-paginated-pages-containing-two-different-content-types/7448 -->
+  <!-- Similar to /layouts/pre-show/list.html but excludes the "pre-show" Types -->
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" (slice "event" "show")) }}
+
+  {{ partial "debug" $paginator.TotalPages }}
+  {{ partial "debug" $paginator.HasNext }}
+  {{ partial "debug" $paginator.TotalNumberOfElements }}
+
+  <!-- Now the page... -->
+  <div class="calendar-list-wrapper">
+    {{- range $paginator.Pages.Reverse -}}
+      <!-- Exclude /past pages from the pre-show! -->
+      {{ if not (strings.Contains .Permalink "/past") }}
+        <!-- Display formatted .Date if item has no .dateRange -->
+        {{ $displayDate := .Date.Format "Mon, Jan 2, 2006" }}
+        {{ $style := "event-style" }}
+        {{ if .Params.dateRange }}
+          {{ $displayDate = .Params.dateRange }}
+          {{ if (strings.Contains .Type "show") }}
+            {{ $style = "show-style"}}
+          {{ end }}  
+        {{ end }}  
+        <ul>
+          <div class="calendar-list-item">
+            <div class="date-style">{{ $displayDate }}</div>
+            <div class="{{$style}}">{{ .Title }}</div>
+        </div>
+      </ul>  
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{ `<!-- /hugo: main block defined in layouts/calendar-as-a-list/list.html -->` | safeHTML }}
+{{ end }}
