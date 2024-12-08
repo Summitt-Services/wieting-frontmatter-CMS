@@ -3,9 +3,9 @@
         <div class="remaining_details">
           <div class="field field--name-field-occurrence-times field--type-datetime">
             {{ if in .context.Params.dateRange "Soon" }}
-              <p class="field--item">
-                Coming Soon to the Wieting! 
-              </p>  
+              <div class="field--item kiosk-details kiosk-dates">
+                Coming Soon! 
+              </div>  
             {{ else }}     
               <div class="kiosk-details kiosk-dates hr-sect">
                 {{ .context.Params.dateRange }}
