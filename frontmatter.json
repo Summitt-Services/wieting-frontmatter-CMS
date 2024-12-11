@@ -106,6 +106,16 @@
           "name": "draft",
           "type": "draft",
           "description": "Set to 'true' if you want to NOT publish this Event"
+        },
+        {
+          "title": "dateRange",
+          "name": "dateRange",
+          "type": "datetime"
+        },
+        {
+          "title": "fmContentType",
+          "name": "fmContentType",
+          "type": "string"
         }
       ]
     },
