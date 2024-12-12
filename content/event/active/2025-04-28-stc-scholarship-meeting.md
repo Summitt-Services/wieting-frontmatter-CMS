@@ -13,7 +13,7 @@ occurrences:
     fieldGroup: occurrence
   - date: 2025-01-27 17:15:00-0600
     fieldGroup: occurrence
-  - date: 2025-02-24 17:15:00-0600
+  - date: 2025-02-17 17:15:00-0600
     fieldGroup: occurrence
   - date: 2025-03-24 17:15:00-0500
     fieldGroup: occurrence
