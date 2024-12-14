@@ -4,7 +4,7 @@ date: 2024-12-21
 slug: ugly-sweater-sing
 dateRange: Dec 21
 shortTitle: Ugly Sweater Sing-Along
-oneSheet: /one-sheet-images/Sing-Along.PNG
+oneSheet: /one-sheet-images/Sing-Along2.png
 showType: Social Event
 runningTime: 120
 mpaaRating: Not Rated
