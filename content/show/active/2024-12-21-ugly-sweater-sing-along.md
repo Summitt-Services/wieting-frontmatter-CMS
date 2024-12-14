@@ -1,18 +1,18 @@
 ---
 title: Ugly Sweater Sing-Along
-date: 2024-12-14
+date: 2024-12-21
 slug: ugly-sweater-sing
-dateRange: Dec 14
+dateRange: Dec 21
 shortTitle: Ugly Sweater Sing-Along
-oneSheet: /one-sheet-images/Sing-Along.png
+oneSheet: /one-sheet-images/Sing-Along.PNG
 showType: Social Event
 runningTime: 120
 mpaaRating: Not Rated
 imdbURL: ""
 occurrences:
-  - date: 2024-12-14 17:00:00-0600
+  - date: 2024-12-21 17:00:00-0600
     format: Not Applicable
-    note: Join us on Saturday, December 14, at The Wieting Theatre for a fun-filled evening of holiday cheer and community connection. The night kicks off with a soup supper at 5:00 p.m., followed by a group sing-along at 6:00 p.m. Whether you're a seasoned singer or just enjoy humming along, this event is for everyone—no singing experience needed! A pianist and song leaders will guide the group in singing classic Christmas carols, and there will also be some holiday-themed performances throughout the evening from a variety of community members.
+    note: Join us on Saturday, December 21 (rescheduled from the 14th), at The Wieting Theatre for a fun-filled evening of holiday cheer and community connection. The night kicks off with a soup supper at 5:00 p.m., followed by a group sing-along at 6:00 p.m. Whether you're a seasoned singer or just enjoy humming along, this event is for everyone—no singing experience needed! A pianist and song leaders will guide the group in singing classic Christmas carols, and there will also be some holiday-themed performances throughout the evening from a variety of community members.
     fieldGroup: show_occurrence
 studioInfo:
   studio: ""
