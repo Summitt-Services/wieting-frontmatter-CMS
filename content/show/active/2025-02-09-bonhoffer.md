@@ -1,8 +1,8 @@
 ---
 title: Bonhoeffer
-date: 2025-12-31
+date: 2025-02-07
 slug: bonhoeffer
-dateRange: Coming Soon!
+dateRange: Feb 7 & 9
 shortTitle: Bonhoeffer
 oneSheet: /one-sheet-images/Bonhoffer.png
 showType: Cinema
@@ -10,7 +10,13 @@ runningTime: 133
 mpaaRating: PG-13
 imdbURL: https://www.imdb.com/title/tt26237514/?ref_=tt_mv_close
 occurrences:
-  - date: 2025-12-31 00:00:00-0600
+  - date: 2025-02-07 19:00:00-0600
+    format: 2D
+    fieldGroup: show_occurrence
+  - date: 2025-02-09 14:00:00-0600
+    format: 2D
+    fieldGroup: show_occurrence
+  - date: 2025-02-09 19:00:00-0600
     format: 2D
     fieldGroup: show_occurrence
 studioInfo:
