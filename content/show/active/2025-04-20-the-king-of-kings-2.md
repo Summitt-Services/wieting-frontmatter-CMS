@@ -4,7 +4,7 @@ date: 2025-04-18
 slug: king-kings2
 dateRange: Apr 18 & 21
 shortTitle: The King of Kings
-oneSheet: one-sheet-images/the-king-of-kings.png
+oneSheet: /one-sheet-images/the-king-of-kings.png
 showType: Animated Cinema
 runningTime: 97
 mpaaRating: PG

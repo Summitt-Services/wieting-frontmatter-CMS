@@ -4,16 +4,13 @@ date: 2025-04-11
 slug: king-kings
 dateRange: Apr 11 & 13
 shortTitle: The King of Kings
-oneSheet: one-sheet-images/the-king-of-kings.png
+oneSheet: /one-sheet-images/the-king-of-kings.png
 showType: Animated Cinema
 runningTime: 97
 mpaaRating: PG
 imdbURL: https://www.imdb.com/title/tt7967302/?ref_=tt_mv_close
 occurrences:
   - date: 2025-04-11 19:00:00-0500
-    format: 2D
-    fieldGroup: show_occurrence
-  - date: 2025-04-13 14:00:00-0500
     format: 2D
     fieldGroup: show_occurrence
   - date: 2025-04-13 19:00:00-0500
