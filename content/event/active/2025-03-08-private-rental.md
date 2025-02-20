@@ -1,12 +1,12 @@
 ---
-title: 2025-03-08-private-rental
+title: Private Rental
 date: 2025-03-08
-slug: 2025-03-08-private-rental
+slug: private-rental-mar-8
 durationMinutes: 300
 occurrences:
   - date: 2025-03-08 10:00:00-0600
     fieldGroup: occurrence
 draft: false
-dateRange: 2025-03-08 00:00:00-0600
+dateRange: Mar 8
 fmContentType: event
 ---
