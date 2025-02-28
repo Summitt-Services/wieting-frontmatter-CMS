@@ -4,7 +4,7 @@ date: 2025-04-11
 slug: king-kings
 dateRange: Apr 11 & 13
 shortTitle: The King of Kings
-oneSheet: /one-sheet-images/the-king-of-kings.png
+oneSheet: https://websiteblobs.blob.core.windows.net/wieting-website/one-sheet/the-king-of-kings.png
 showType: Animated Cinema
 runningTime: 97
 mpaaRating: PG

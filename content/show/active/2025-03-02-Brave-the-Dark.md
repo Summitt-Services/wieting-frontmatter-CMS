@@ -4,7 +4,7 @@ date: 2025-02-28
 slug: brave-the-dark
 dateRange: Feb 28 & Mar 2
 shortTitle: Brave the Dark
-oneSheet: /one-sheet-images/brave-the-dark.png
+oneSheet: https://websiteblobs.blob.core.windows.net/wieting-website/one-sheet/brave-the-dark.png
 showType: Cinema
 runningTime: 112
 mpaaRating: PG-13
