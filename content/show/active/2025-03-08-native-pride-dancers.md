@@ -4,7 +4,7 @@ date: 2025-03-08
 slug: native-pride-dancers
 dateRange: Mar 8
 shortTitle: Native Pride Dancers
-oneSheet: /one-sheet-images/larryyazzie.jpg
+oneSheet: https://websiteblobs.blob.core.windows.net/wieting-website/one-sheet/larryyazzie.jpg
 showType: Live Performance
 runningTime: 90
 mpaaRating: ""
