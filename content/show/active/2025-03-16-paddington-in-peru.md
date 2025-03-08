@@ -13,10 +13,10 @@ occurrences:
   - date: 2025-03-14 19:00:00-0500
     format: 2D
     fieldGroup: show_occurrence
-  - date: 2025-03-16 00:00:00-0500
+  - date: 2025-03-16 14:00:00-0500
     format: 2D
     fieldGroup: show_occurrence
-  - date: 2025-03-16 00:00:00-0500
+  - date: 2025-03-16 19:00:00-0500
     format: 2D
     fieldGroup: show_occurrence
 studioInfo:
