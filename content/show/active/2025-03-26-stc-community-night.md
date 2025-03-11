@@ -8,7 +8,7 @@ oneSheet: https://websiteblobs.blob.core.windows.net/wieting-website/one-sheet/D
 showType: Live Performance
 runningTime: 60
 mpaaRating: Not Rated
-imdbURL: ""
+imdbURL: "https://joefingerhut.com"
 occurrences:
   - date: 2025-03-26 18:30:00-0500
     format: Not Applicable
