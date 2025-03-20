@@ -1,7 +1,7 @@
 ---
-title: Summer Camps
+title: Summer Camp
 draft: false
-author: Mackenzie McFate
+author: Mark McFate
 date: 2023-03-24T09:48:21-05:00
 socialshare: false
 weight: 195
@@ -12,13 +12,13 @@ menu:
     weight: 805
 ---
 
-# 2024 - Summer Camps are Back!
+# 2025 - Summer Camp is Back!
 
-## Children's Theatre Camp - The School for Spies
+## Children's Theatre Camp - The Great Zoo Escape
 
-![2024 Theatre Camp Poster](/img/Spies-Camp.png)
+<!-- ![2025 Theatre Camp Poster](/img/Spies-Camp.png) -->
 
-Information and a registration form for current 2nd graders and up that are interested in **Children's Theatre Camp** July 15-19, is available to [download and print here](/pdf/Spies-Registration-Camp-Form-final-english.pdf).  A Spanish version of the form is also available [here](/pdf/Spanish-Spies-Registration-Camp-Form.pdf).  
+Information and a registration form for current 2nd graders and up that are interested in **Children's Theatre Camp** July 14-18, is available to [download and print here](https://websiteblobs.blob.core.windows.net/wieting-website/2025_camp_registration_form_proof.pdf).  A Spanish version of the form will also be available here SOON.  <!-- [here](/pdf/Spanish-Spies-Registration-Camp-Form.pdf).  -->  
 
 <hr/>
 
