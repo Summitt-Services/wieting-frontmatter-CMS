@@ -34,7 +34,7 @@ Admission for live events varies. Visit our home page marquee and open an indivi
 ### Drinks
 
 * Pop - $3 per bottle (20 oz.).  We generally will have Pepsi, Diet Pepsi, Mt. Dew, Root Beer and Sierra Mist.
-* Gatorade - $3 per bottle.  We generally will have G2 flavors Glacier Freeze (blue), Fruit Punch (red), and Grape.
+* Gatorade, Lemonade, and Tea - $3 per bottle.  We generally will have G2 flavors Glacier Freeze (blue), Fruit Punch (red), and Grape.
 * Water - $2 per bottle.
 
 ### Candy
@@ -49,7 +49,8 @@ Admission for live events varies. Visit our home page marquee and open an indivi
 
 ### Specials
 
-* Snack Pack - $7 (Drink + Popcorn + Regular Candy)
+* Snack Pack - $8 (Drink + Popcorn + Regular Candy)
+* Snack Pack (Large) - $9 (Drink + Popcorn + Boxed Candy)
 * Combo Pack - $10 (2 Drinks + Jumbo Popcorn)
 
 #### We also have Snack Pack and Combo Pack gift cards available too!

@@ -2,7 +2,7 @@
 title: The King of Kings
 date: 2025-04-18
 slug: king-kings2
-dateRange: Apr 18 & 21
+dateRange: Apr 18 & 20
 shortTitle: The King of Kings
 oneSheet: https://websiteblobs.blob.core.windows.net/wieting-website/one-sheet/the-king-of-kings.png
 showType: Animated Cinema
