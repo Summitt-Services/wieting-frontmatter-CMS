@@ -2,7 +2,7 @@
 title: Lilo & Stitch
 date: 2025-05-30
 slug: lilo2
-dateRange: May 30 & July 1
+dateRange: May 30 & June 1
 shortTitle: Lilo & Stitch
 oneSheet: https://wieting.blob.core.windows.net/one-sheet-images/lilo-and-stitch.png
 showType: Animated Cinema
