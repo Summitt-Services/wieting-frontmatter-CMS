@@ -2,7 +2,7 @@
 title: The Amateur
 date: 2025-05-16
 slug: the-amateur
-dateRange: May 18 & 19
+dateRange: May 16 & 18
 shortTitle: The Amateur
 oneSheet: https://wieting.blob.core.windows.net/one-sheet-images/amateur.png
 showType: Cinema
