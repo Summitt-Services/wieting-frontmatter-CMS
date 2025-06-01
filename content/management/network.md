@@ -83,3 +83,9 @@ Labels should be applied such that the `DeviceCode.Port` corresponding to a part
   - A `THEATRE` network cable running from device `R`, port 1, to an unidentified port on device `F` will have a pair of labels marked `R.1 - THEATRE - F.x`.  \*For example, at device `R` the `R.1` end of the label should be nearest device `R`, while at device `F` the `F.x` end of that label should be nearest device `F`.
   - A `USB` cable running from an unidentified port on device `L` to an `In` port on device `X` will carry a pair of lables marked `L.x - USB - X.In`.
   - An `HDMI-to-DVI` cable running from the `Out` port on device `H` to a `DVI` port on device `P` will be labeled `H.Out - HDMI-to-DVI - P.DVI`.
+
+  # Mac NFS Connection
+
+  As long as the Mac Mini and Projector/IMB IP addresses are as shown above, the Mac can act as an NFS server from which to ingest content (mostly keys) for projection.  The Mac's NFS configuration steps were taken from [https://apple.stackexchange.com/questions/476892/new-mac-unable-to-get-nfs-to-work-what-am-i-missing](https://apple.stackexchange.com/questions/476892/new-mac-unable-to-get-nfs-to-work-what-am-i-missing).  
+
+  The Mac serves its `/Users/toledowieting/Downloads` directory mapped to the projection system as `Booth Mac Mini NFS`.  On the [IMB web interface](https://10.11.111.128) go to `Content` | `Source` | `Ingest` to initiate a connection and ingest transfer from the Mac to the projection system.  
