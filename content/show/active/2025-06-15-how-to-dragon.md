@@ -10,7 +10,7 @@ runningTime: 125
 mpaaRating: PG
 imdbURL: https://www.imdb.com/title/tt26743210/?ref_=mv_close
 occurrences:
-  - date: 2025-06-15 14:00:00-0500
+  - date: 2025-06-27 14:00:00-0500
     format: 2D
     note: Español
     fieldGroup: show_occurrence
