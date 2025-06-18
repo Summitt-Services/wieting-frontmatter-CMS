@@ -1,6 +1,6 @@
 ---
 title: How to Train Your Dragon
-date: 2025-06-13
+date: 2025-06-15
 slug: dragon
 dateRange: June 13 & 15
 shortTitle: How to Train Your Dragon

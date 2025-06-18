@@ -5,7 +5,7 @@ slug: dragon2
 dateRange: June 20 & 22
 shortTitle: How to Train Your Dragon
 oneSheet: https://wieting.blob.core.windows.net/one-sheet-images/How-to-Train-Your-Dragon.png
-showType: Animated Cinema
+showType: Cinema
 runningTime: 125
 mpaaRating: PG
 imdbURL: https://www.imdb.com/title/tt26743210/?ref_=mv_close
