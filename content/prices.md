@@ -33,7 +33,7 @@ Admission for live events varies. Visit our home page marquee and open an indivi
 
 ### Drinks
 
-* Pop - $3 per bottle (20 oz.).  We generally will have Pepsi, Diet Pepsi, Mt. Dew, Root Beer and Sierra Mist.
+* Pop - $3 per bottle (20 oz.).  We generally will have Pepsi, Diet Pepsi, Mt. Dew, Root Beer and Starry.
 * Gatorade, Lemonade, and Tea - $3 per bottle.  We generally will have G2 flavors Glacier Freeze (blue), Fruit Punch (red), and Grape.
 * Water - $2 per bottle.
 
