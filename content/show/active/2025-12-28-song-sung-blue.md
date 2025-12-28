@@ -19,6 +19,7 @@ occurrences:
   - date: 2025-12-28 19:00:00-0600
     format: 2D
     fieldGroup: show_occurrence
+    note: CANCELED due to inclement weather!
 studioInfo:
   studio: ""
   studioFee: 0
