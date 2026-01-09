@@ -24,8 +24,5 @@ studioInfo:
   studioFee: 0
   studioPercentage: 0
 draft: false
-durationMinutes: 96
-type: show
-fmContentType: show
 ---
 SpongeBob journeys to the ocean's depths to face the Flying Dutchman's ghost, encountering challenges and uncovering marine mysteries.
